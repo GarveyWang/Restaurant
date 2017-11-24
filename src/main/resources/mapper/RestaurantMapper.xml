@@ -2,10 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.restaurant.dao.IRestaurantDao">
-  <resultMap id="restaurantMap" type="com.restaurant.model.Restaurant">
+
+  <resultMap id="RestaurantResultMap" type="com.restaurant.model.Restaurant">
     <id column="r_id" jdbcType="INTEGER" property="rId" />
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="name" jdbcType="VARCHAR" property="name" />
+
+    <association property="cashier" column="r_id" select="com.restaurant.dao.ICashierDao.selectByRId"/>
+
     <collection property="managers" ofType="com.restaurant.model.Manager">
       <id column="m_id" jdbcType="INTEGER" property="mId" />
       <result column="password" jdbcType="VARCHAR" property="password" />
@@ -13,12 +17,36 @@
       <result column="phone" jdbcType="VARCHAR" property="phone" />
       <result column="r_id" jdbcType="INTEGER" property="rId" />
     </collection>
+
+    <collection property="waiters" ofType="com.restaurant.model.Waiter">
+      <id column="w_id" jdbcType="INTEGER" property="wId" />
+      <result column="password" jdbcType="VARCHAR" property="password" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="active" jdbcType="TINYINT" property="active" />
+      <result column="r_id" jdbcType="INTEGER" property="rId" />
+    </collection>
+
+    <collection property="kitchens" ofType="com.restaurant.model.Kitchen">
+      <id column="k_id" jdbcType="INTEGER" property="kId" />
+      <result column="password" jdbcType="VARCHAR" property="password" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="active" jdbcType="TINYINT" property="active" />
+      <result column="r_id" jdbcType="INTEGER" property="rId" />
+    </collection>
+
+    <collection property="tableGroups" ofType="com.restaurant.model.TableGroup">
+      <id column="g_id" jdbcType="INTEGER" property="gId" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="r_id" jdbcType="INTEGER" property="rId" />
+    </collection>
+
   </resultMap>
+
   <sql id="Restaurant_Column_List">
     r_id, password, name
   </sql>
 
-  <select id="selectRestaurantAndManager" parameterType="java.lang.Integer" resultMap="restaurantMap">
+  <select id="selectRestaurantAndManager" parameterType="java.lang.Integer" resultMap="RestaurantResultMap">
     select 
       r.r_id, r.password, r.name, m.r_id, m.m_id,m.password, m.name, m.phone, m.r_id
     from restaurant r,manager m

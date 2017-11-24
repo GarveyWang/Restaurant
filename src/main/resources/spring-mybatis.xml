@@ -62,4 +62,16 @@
     <!-- 配置基于注解的声明式事务 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
+    <!-- Model-->
+    <bean id="cashier" class="com.restaurant.model.Cashier"/>
+    <bean id="diningTable" class="com.restaurant.model.DiningTable"/>
+    <bean id="dish" class="com.restaurant.model.Dish"/>
+    <bean id="tableGroup" class="com.restaurant.model.TableGroup"/>
+    <bean id="kitchen" class="com.restaurant.model.Kitchen"/>
+    <bean id="manager" class="com.restaurant.model.Manager"/>
+    <bean id="orderForm" class="com.restaurant.model.OrderForm"/>
+    <bean id="orderDish" class="com.restaurant.model.OrderDish"/>
+    <bean id="restaurant" class="com.restaurant.model.Restaurant"/>
+    <bean id="waiter" class="com.restaurant.model.Waiter"/>
+
 </beans>

@@ -16,4 +16,8 @@ public class RestaurantService implements IRestaurantService {
         return restaurantDao.selectRestaurantAndManager(id);
     }
 
+    @Override
+    public int insertSelective(Restaurant record) {
+        return restaurantDao.insertSelective(record);
+    }
 }
