@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.restaurant.dao.OrderDishDao">
+
+  <resultMap id="OrderDishResultMap" type="com.restaurant.entity.OrderDish">
+    <id column="o_id" jdbcType="INTEGER" property="oId" />
+    <id column="d_id" jdbcType="INTEGER" property="dId" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+  </resultMap>
+
+  <sql id="Order_Dish_Column_List">
+    o_id, d_id, description, status
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
+    select 
+    <include refid="Order_Dish_Column_List" />
+    from order_dish
+    where o_id = #{oId,jdbcType=INTEGER}
+      and d_id = #{dId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey">
+    delete from order_dish
+    where o_id = #{oId,jdbcType=INTEGER}
+      and d_id = #{dId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.restaurant.entity.OrderDish">
+    insert into order_dish (o_id, d_id, description, 
+      status)
+    values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{description,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.restaurant.entity.OrderDish">
+    insert into order_dish
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="oId != null">
+        o_id,
+      </if>
+      <if test="dId != null">
+        d_id,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="oId != null">
+        #{oId,jdbcType=INTEGER},
+      </if>
+      <if test="dId != null">
+        #{dId,jdbcType=INTEGER},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.OrderDish">
+    update order_dish
+    <set>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where o_id = #{oId,jdbcType=INTEGER}
+      and d_id = #{dId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.OrderDish">
+    update order_dish
+    set description = #{description,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR}
+    where o_id = #{oId,jdbcType=INTEGER}
+      and d_id = #{dId,jdbcType=INTEGER}
+  </update>
+</mapper>

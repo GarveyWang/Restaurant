@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.restaurant.dao.DiningTableDao">
+  <resultMap id="DiningTableResultMap" type="com.restaurant.entity.DiningTable">
+    <id column="t_id" jdbcType="INTEGER" property="tId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="capacity" jdbcType="INTEGER" property="capacity" />
+    <result column="guest_number" jdbcType="INTEGER" property="guestNumber" />
+    <result column="service_code" jdbcType="VARCHAR" property="serviceCode" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="g_id" jdbcType="INTEGER" property="gId" />
+  </resultMap>
+
+  <sql id="Dining_Table_Column_List">
+    t_id, name, description, capacity, guest_number, service_code, status, g_id
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="DiningTableResultMap">
+    select 
+    <include refid="Dining_Table_Column_List" />
+    from dining_table
+    where t_id = #{tId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByGId" parameterType="java.lang.Integer" resultMap="DiningTableResultMap">
+    select
+    <include refid="Dining_Table_Column_List" />
+    from dining_table
+    where g_id = #{gId,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from dining_table
+    where t_id = #{tId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.restaurant.entity.DiningTable">
+    insert into dining_table (t_id, name, description, 
+      capacity, guest_number, service_code, 
+      status, g_id)
+    values (#{tId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
+      #{capacity,jdbcType=INTEGER}, #{guestNumber,jdbcType=INTEGER}, #{serviceCode,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR}, #{gId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.restaurant.entity.DiningTable">
+    insert into dining_table
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tId != null">
+        t_id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="capacity != null">
+        capacity,
+      </if>
+      <if test="guestNumber != null">
+        guest_number,
+      </if>
+      <if test="serviceCode != null">
+        service_code,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="gId != null">
+        g_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tId != null">
+        #{tId,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="capacity != null">
+        #{capacity,jdbcType=INTEGER},
+      </if>
+      <if test="guestNumber != null">
+        #{guestNumber,jdbcType=INTEGER},
+      </if>
+      <if test="serviceCode != null">
+        #{serviceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="gId != null">
+        #{gId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.DiningTable">
+    update dining_table
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="capacity != null">
+        capacity = #{capacity,jdbcType=INTEGER},
+      </if>
+      <if test="guestNumber != null">
+        guest_number = #{guestNumber,jdbcType=INTEGER},
+      </if>
+      <if test="serviceCode != null">
+        service_code = #{serviceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="gId != null">
+        g_id = #{gId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where t_id = #{tId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.DiningTable">
+    update dining_table
+    set name = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      capacity = #{capacity,jdbcType=INTEGER},
+      guest_number = #{guestNumber,jdbcType=INTEGER},
+      service_code = #{serviceCode,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      g_id = #{gId,jdbcType=INTEGER}
+    where t_id = #{tId,jdbcType=INTEGER}
+  </update>
+</mapper>
