@@ -5,13 +5,16 @@
   <resultMap id="OrderDishResultMap" type="com.restaurant.entity.OrderDish">
     <id column="o_id" jdbcType="INTEGER" property="oId" />
     <id column="d_id" jdbcType="INTEGER" property="dId" />
-    <result column="description" jdbcType="VARCHAR" property="description" />
+    <id column="number" jdbcType="INTEGER" property="number" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
     <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="order_time" jdbcType="TIMESTAMP" property="orderTime" />
   </resultMap>
 
   <sql id="Order_Dish_Column_List">
-    o_id, d_id, description, status
+    o_id, d_id, number, remark, status, order_time
   </sql>
+
   <select id="selectByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
     select 
     <include refid="Order_Dish_Column_List" />
@@ -19,17 +22,34 @@
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
   </select>
+
+  <select id="selectByOId" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
+    select
+    <include refid="Order_Dish_Column_List" />
+    from order_dish
+    where o_id = #{oId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectNotEndByOId" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
+    select
+    <include refid="Order_Dish_Column_List" />
+    from order_dish
+    where o_id = #{oId,jdbcType=INTEGER} and status != "已上菜"
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey">
     delete from order_dish
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
   </delete>
+
   <insert id="insert" parameterType="com.restaurant.entity.OrderDish">
-    insert into order_dish (o_id, d_id, description, 
-      status)
-    values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{description,jdbcType=VARCHAR}, 
-      #{status,jdbcType=VARCHAR})
+    insert into order_dish (o_id, d_id, number, remark,
+      status, order_time)
+    values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{number,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR},
+      #{status,jdbcType=VARCHAR}, #{orderTime,jdbcType=TIMESTAMP})
   </insert>
+
   <insert id="insertSelective" parameterType="com.restaurant.entity.OrderDish">
     insert into order_dish
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -39,11 +59,17 @@
       <if test="dId != null">
         d_id,
       </if>
-      <if test="description != null">
-        description,
+      <if test="number != null">
+        number,
+      </if>
+      <if test="remark != null">
+        remark,
       </if>
       <if test="status != null">
         status,
+      </if>
+      <if test="order_time != null">
+        order_time,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -53,22 +79,34 @@
       <if test="dId != null">
         #{dId,jdbcType=INTEGER},
       </if>
-      <if test="description != null">
-        #{description,jdbcType=VARCHAR},
+      <if test="number != null">
+        #{number,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
         #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTime != null">
+        #{orderTime,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.OrderDish">
     update order_dish
     <set>
-      <if test="description != null">
-        description = #{description,jdbcType=VARCHAR},
+      <if test="number != null">
+        number = #{number,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
       </if>
       <if test="status != null">
         status = #{status,jdbcType=VARCHAR},
+      </if>
+      <if test="orderTime != null">
+        orderTime = #{orderTime,jdbcType=VARCHAR},
       </if>
     </set>
     where o_id = #{oId,jdbcType=INTEGER}
@@ -76,8 +114,10 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.OrderDish">
     update order_dish
-    set description = #{description,jdbcType=VARCHAR},
-      status = #{status,jdbcType=VARCHAR}
+    set number = #{number,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      order_time = #{orderTime, jdbcType=TIMESTAMP}
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
   </update>

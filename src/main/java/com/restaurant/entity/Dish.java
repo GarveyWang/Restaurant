@@ -15,7 +15,7 @@ public class Dish {
 
     private String status;
 
-    private Integer oId;
+    private Integer dgId;
 
     public Integer getdId() {
         return dId;
@@ -73,11 +73,11 @@ public class Dish {
         this.status = status == null ? null : status.trim();
     }
 
-    public Integer getoId() {
-        return oId;
+    public Integer getDgId() {
+        return dgId;
     }
 
-    public void setoId(Integer oId) {
-        this.oId = oId;
+    public void setDgId(Integer dgId) {
+        this.dgId = dgId;
     }
 }

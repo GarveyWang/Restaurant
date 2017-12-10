@@ -2,6 +2,8 @@ package com.restaurant.dao;
 
 import com.restaurant.entity.Dish;
 
+import java.util.List;
+
 public interface DishDao {
     int deleteByPrimaryKey(Integer dId);
 
@@ -9,7 +11,9 @@ public interface DishDao {
 
     int insertSelective(Dish record);
 
-    Dish selectByPrimaryKey(Integer dId);
+    Dish selectById(Integer dId);
+
+    List<Dish> selectByDgId(Integer dgId);
 
     int updateByPrimaryKeySelective(Dish record);
 

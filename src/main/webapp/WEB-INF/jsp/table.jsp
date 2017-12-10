@@ -9,7 +9,7 @@
 <div class="container">
     <c:forEach var="tableGroup" items="${tableGroupList}">
         <table class="table">
-            <caption>Group ID:${tableGroup.gId} Group Name:${tableGroup.name}</caption>
+            <caption>Group ID:${tableGroup.tgId} Group Name:${tableGroup.name}</caption>
             <thead>
                 <tr>
                     <th>餐桌ID</th>

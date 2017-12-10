@@ -21,4 +21,9 @@ public class CashierServiceImpl implements com.restaurant.service.CashierService
     public Cashier selectByRId(int rId) {
         return cashierDao.selectByRId(rId);
     }
+
+    @Override
+    public Cashier selectById(int cId){
+        return cashierDao.selectById(cId);
+    }
 }

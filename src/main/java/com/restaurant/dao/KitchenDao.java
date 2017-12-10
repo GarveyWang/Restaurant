@@ -11,7 +11,7 @@ public interface KitchenDao {
 
     int insertSelective(Kitchen record);
 
-    Kitchen selectByPrimaryKey(Integer kId);
+    Kitchen selectById(Integer kId);
 
     List<Kitchen> selectByRId(Integer rId);
 

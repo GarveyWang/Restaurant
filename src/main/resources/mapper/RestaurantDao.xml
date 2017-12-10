@@ -27,8 +27,25 @@
     </collection>
 
     <collection property="tableGroups" column="r_id" select="com.restaurant.dao.TableGroupDao.selectByRId" ofType="com.restaurant.entity.TableGroup">
-      <id column="g_id" jdbcType="INTEGER" property="gId" />
+      <id column="tg_id" jdbcType="INTEGER" property="tgId" />
       <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="r_id" jdbcType="INTEGER" property="rId" />
+    </collection>
+
+    <collection property="dishGroups" column="r_id" select="com.restaurant.dao.DishGroupDao.selectByRId" ofType="com.restaurant.entity.DishGroup">
+      <id column="dg_id" jdbcType="INTEGER" property="dgId" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="r_id" jdbcType="INTEGER" property="rId" />
+    </collection>
+
+    <collection property="orderForms" column="r_id" select="com.restaurant.dao.OrderFormDao.selectByRId" ofType="com.restaurant.entity.OrderForm">
+      <id column="o_id" jdbcType="INTEGER" property="oId" />
+      <result column="status" jdbcType="VARCHAR" property="status" />
+      <result column="submit_time" jdbcType="TIMESTAMP" property="submitTime" />
+      <result column="total_price" jdbcType="INTEGER" property="totalPrice" />
+      <result column="discount" jdbcType="REAL" property="discount" />
+      <result column="review" jdbcType="VARCHAR" property="review" />
+      <result column="t_id" jdbcType="INTEGER" property="tId" />
       <result column="r_id" jdbcType="INTEGER" property="rId" />
     </collection>
 
@@ -38,34 +55,13 @@
     r_id, password, name
   </sql>
 
-  <select id="selectRestaurantById" parameterType="java.lang.Integer" resultMap="RestaurantResultMap">
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="RestaurantResultMap">
     select
     <include refid="Restaurant_Column_List" />
     from restaurant
     where r_id = #{rId,jdbcType=INTEGER}
   </select>
 
-  <!--
-        c.c_id,c.password.c.active,c.r_id,
-      w.w_id,w.password,w.name,w.active,w.r_id,
-      ,cashier c,waiter w
-       and c.r_id=r.r_id and w.r_id=r.r_id
-  -->
-
-  <select id="selectRestaurantAndKitchens" parameterType="java.lang.Integer" resultMap="RestaurantResultMap">
-  select
-  r.r_id, r.password, r.name, m.r_id, m.m_id,m.password, m.name, m.phone, m.r_id
-  from restaurant r,manager m
-  where r.r_id = #{rId,jdbcType=INTEGER} and m.r_id = r.r_id
-  </select>
-
-  <select id="selectRestaurantByIdWithEmployee" parameterType="java.lang.Integer" resultMap="RestaurantResultMap">
-    select
-      r.r_id,r.password,r.name,
-      k.k_id,k.password,k.name,k.active,k.r_id
-    from restaurant r,kitchen k
-    where r.r_id=#{rId,jdbcType=INTEGER} and k.r_id=r.r_id
-  </select>
 
   <select id="getRestaurantCount" parameterType="java.lang.Integer" resultType="java.lang.Integer">
     SELECT

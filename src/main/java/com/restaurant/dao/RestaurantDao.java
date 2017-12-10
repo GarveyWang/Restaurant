@@ -4,11 +4,7 @@ import com.restaurant.entity.Restaurant;
 
 public interface RestaurantDao {
 
-    Restaurant selectRestaurantById(Integer rId);
-
-    Restaurant selectRestaurantByIdWithEmployee(Integer rId);
-
-    Restaurant selectRestaurantAndKitchens(Integer rId);
+    Restaurant selectById(Integer rId);
 
     int deleteById(Integer rId);
 

@@ -3,11 +3,11 @@
 <mapper namespace="com.restaurant.dao.TableGroupDao">
 
   <resultMap id="TableGroupResultMap" type="com.restaurant.entity.TableGroup">
-    <id column="g_id" jdbcType="INTEGER" property="gId" />
+    <id column="tg_id" jdbcType="INTEGER" property="tgId" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="r_id" jdbcType="INTEGER" property="rId" />
 
-    <collection property="diningTables" ofType="com.restaurant.entity.DiningTable" column="g_id" select="com.restaurant.dao.DiningTableDao.selectByGId" >
+    <collection property="diningTables" ofType="com.restaurant.entity.DiningTable" column="tg_id" select="com.restaurant.dao.DiningTableDao.selectByTgId" >
       <id column="t_id" jdbcType="INTEGER" property="tId" />
       <result column="name" jdbcType="VARCHAR" property="name" />
       <result column="description" jdbcType="VARCHAR" property="description" />
@@ -15,18 +15,19 @@
       <result column="guest_number" jdbcType="INTEGER" property="guestNumber" />
       <result column="service_code" jdbcType="VARCHAR" property="serviceCode" />
       <result column="status" jdbcType="VARCHAR" property="status" />
-      <result column="g_id" jdbcType="INTEGER" property="gId" />
+      <result column="tg_id" jdbcType="INTEGER" property="tgId" />
     </collection>
   </resultMap>
 
   <sql id="Table_Group_Column_List">
-    g_id, name, r_id
+    tg_id, name, r_id
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="TableGroupResultMap">
+
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="TableGroupResultMap">
     select 
     <include refid="Table_Group_Column_List" />
     from table_group
-    where g_id = #{gId,jdbcType=INTEGER}
+    where tg_id = #{tgId,jdbcType=INTEGER}
   </select>
 
   <select id="selectByRId" parameterType="java.lang.Integer" resultMap="TableGroupResultMap">
@@ -38,21 +39,21 @@
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from table_group
-    where g_id = #{gId,jdbcType=INTEGER}
+    where tg_id = #{tgId,jdbcType=INTEGER}
   </delete>
 
   <insert id="insert" parameterType="com.restaurant.entity.TableGroup">
-    insert into table_group (g_id, name, r_id
+    insert into table_group (tg_id, name, r_id
       )
-    values (#{gId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{rId,jdbcType=INTEGER}
+    values (#{tgId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{rId,jdbcType=INTEGER}
       )
   </insert>
 
   <insert id="insertSelective" parameterType="com.restaurant.entity.TableGroup">
     insert into table_group
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        g_id,
+      <if test="tgId != null">
+        tg_id,
       </if>
       <if test="name != null">
         name,
@@ -62,8 +63,8 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="gId != null">
-        #{gId,jdbcType=INTEGER},
+      <if test="tgId != null">
+        #{tgId,jdbcType=INTEGER},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
@@ -84,12 +85,12 @@
         r_id = #{rId,jdbcType=INTEGER},
       </if>
     </set>
-    where g_id = #{gId,jdbcType=INTEGER}
+    where tg_id = #{tgId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.TableGroup">
     update table_group
     set name = #{name,jdbcType=VARCHAR},
       r_id = #{rId,jdbcType=INTEGER}
-    where g_id = #{gId,jdbcType=INTEGER}
+    where tg_id = #{tgId,jdbcType=INTEGER}
   </update>
 </mapper>

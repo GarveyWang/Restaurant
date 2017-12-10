@@ -9,7 +9,7 @@ public interface CashierDao {
 
     int insertSelective(Cashier record);
 
-    Cashier selectByPrimaryKey(Integer cId);
+    Cashier selectById(Integer cId);
 
     Cashier selectByRId(Integer rId);
 

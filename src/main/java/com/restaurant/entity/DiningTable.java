@@ -18,7 +18,7 @@ public class DiningTable {
 
     private String status;
 
-    private Integer gId;
+    private Integer tgId;
 
     @Resource
     private List<OrderForm> orders;
@@ -87,11 +87,11 @@ public class DiningTable {
         this.status = status == null ? null : status.trim();
     }
 
-    public Integer getgId() {
-        return gId;
+    public Integer getTgId() {
+        return tgId;
     }
 
-    public void setgId(Integer gId) {
-        this.gId = gId;
+    public void setTgId(Integer tgId) {
+        this.tgId = tgId;
     }
 }

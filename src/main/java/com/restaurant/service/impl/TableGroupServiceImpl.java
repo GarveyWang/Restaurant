@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service("groupService")
+@Service("tableGroupService")
 public class TableGroupServiceImpl implements com.restaurant.service.TableGroupService {
     @Resource
     private TableGroupDao groupDao;
@@ -20,6 +20,11 @@ public class TableGroupServiceImpl implements com.restaurant.service.TableGroupS
     @Override
     public int insert(TableGroup record){
         return groupDao.insert(record);
+    }
+
+    @Override
+    public TableGroup selectById(int tgId) {
+        return groupDao.selectById(tgId);
     }
 
     @Override

@@ -39,11 +39,4 @@ public class RestaurantServiceTest {
         boolean isExists=restaurantService.isRestaurantExists(id);
         System.out.println(isExists);
     }
-
-    @Test
-    public void selectRestaurantByIdWithEmployee() throws Exception {
-        int id=1;
-        Restaurant restaurant=restaurantService.selectRestaurantByIdWithEmployee(id);
-        System.out.println(restaurant.getKitchens().get(0).getName());
-    }
 }

@@ -9,5 +9,7 @@ public interface TableGroupService {
 
     int insert(TableGroup record);
 
+    TableGroup selectById(int tgId);
+
     List<TableGroup> selectByRId(int rId);
 }

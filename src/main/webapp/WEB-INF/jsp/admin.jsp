@@ -9,6 +9,7 @@
 <div class="btn-group">
     <a href="/restaurant/${rId}/employee" type="button" class="btn btn-default">员工账号管理</a>
     <a href="/restaurant/${rId}/tablegroup" type="button" class="btn btn-default">餐桌信息管理</a>
+    <a href="/restaurant/${rId}/dishgroup" type="button" class="btn btn-default">菜单管理</a>
 </div>
 
 </body>

@@ -13,7 +13,7 @@
   <sql id="Kitchen_Column_List">
     k_id, password, name, active, r_id
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="KitchenResultMap">
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="KitchenResultMap">
     select 
     <include refid="Kitchen_Column_List" />
     from kitchen

@@ -17,6 +17,8 @@ public class OrderForm {
 
     private Integer tId;
 
+    private Integer rId;
+
     public Integer getoId() {
         return oId;
     }
@@ -71,5 +73,13 @@ public class OrderForm {
 
     public void settId(Integer tId) {
         this.tId = tId;
+    }
+
+    public Integer getrId() {
+        return rId;
+    }
+
+    public void setrId(Integer rId) {
+        this.rId = rId;
     }
 }

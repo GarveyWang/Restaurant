@@ -1,7 +1,10 @@
 package com.restaurant.dao;
 
+
 import com.restaurant.entity.OrderDish;
 import com.restaurant.entity.OrderDishKey;
+
+import java.util.List;
 
 public interface OrderDishDao {
     int deleteByPrimaryKey(OrderDishKey key);
@@ -15,4 +18,10 @@ public interface OrderDishDao {
     int updateByPrimaryKeySelective(OrderDish record);
 
     int updateByPrimaryKey(OrderDish record);
+
+    List<OrderDish> selectByOId(int oId);
+
+    List<OrderDish> selectNotEndByOId(int oId);
+
+    
 }

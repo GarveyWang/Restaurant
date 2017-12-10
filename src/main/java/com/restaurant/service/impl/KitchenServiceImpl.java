@@ -21,4 +21,9 @@ public class KitchenServiceImpl implements com.restaurant.service.KitchenService
     public List<Kitchen> selectByRId(int rId) {
         return kitchenDao.selectByRId(rId);
     }
+
+    @Override
+    public Kitchen selectById(int Id) {
+        return kitchenDao.selectById(Id);
+    }
 }

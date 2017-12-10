@@ -8,4 +8,6 @@ public interface KitchenService {
     public int insertSelective(Kitchen record);
 
     public List<Kitchen> selectByRId(int rId);
+
+    public Kitchen selectById(int Id);
 }

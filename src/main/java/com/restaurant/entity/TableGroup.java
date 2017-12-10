@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 public class TableGroup {
-    private Integer gId;
+    private Integer tgId;
 
     private String name;
 
@@ -21,12 +21,12 @@ public class TableGroup {
         this.diningTables = diningTables;
     }
 
-    public Integer getgId() {
-        return gId;
+    public Integer getTgId() {
+        return tgId;
     }
 
-    public void setgId(Integer gId) {
-        this.gId = gId;
+    public void setTgId(Integer tgId) {
+        this.tgId = tgId;
     }
 
     public String getName() {

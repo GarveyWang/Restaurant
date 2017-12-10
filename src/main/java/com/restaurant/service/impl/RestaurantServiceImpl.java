@@ -14,12 +14,7 @@ public class RestaurantServiceImpl implements com.restaurant.service.RestaurantS
 
     @Override
     public Restaurant selectRestaurantById(int id) {
-        return restaurantDao.selectRestaurantById(id);
-    }
-
-    @Override
-    public Restaurant selectRestaurantByIdWithEmployee(int id){
-        return restaurantDao.selectRestaurantByIdWithEmployee(id);
+        return restaurantDao.selectById(id);
     }
 
     @Override

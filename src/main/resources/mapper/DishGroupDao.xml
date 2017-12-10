@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.restaurant.dao.DishGroupDao">
+
+  <resultMap id="DishGroupResultMap" type="com.restaurant.entity.DishGroup">
+    <id column="dg_id" jdbcType="INTEGER" property="dgId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="r_id" jdbcType="INTEGER" property="rId" />
+
+    <collection property="dishes" ofType="com.restaurant.entity.Dish" column="dg_id" select="com.restaurant.dao.DishDao.selectByDgId" >
+      <id column="d_id" jdbcType="INTEGER" property="dId" />
+      <result column="name" jdbcType="VARCHAR" property="name" />
+      <result column="description" jdbcType="VARCHAR" property="description" />
+      <result column="price" jdbcType="INTEGER" property="price" />
+      <result column="cost" jdbcType="INTEGER" property="cost" />
+      <result column="active" jdbcType="TINYINT" property="active" />
+      <result column="status" jdbcType="VARCHAR" property="status" />
+      <result column="dg_id" jdbcType="INTEGER" property="dgId" />
+    </collection>
+  </resultMap>
+
+  <sql id="Dish_Group_Column_List">
+    dg_id, name, r_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="DishGroupResultMap">
+    select 
+    <include refid="Dish_Group_Column_List" />
+    from dish_group
+    where dg_id = #{dgId,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByRId" parameterType="java.lang.Integer" resultMap="DishGroupResultMap">
+    select
+    <include refid="Dish_Group_Column_List" />
+    from dish_group
+    where r_id = #{rId,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from dish_group
+    where dg_id = #{dgId,jdbcType=INTEGER}
+  </delete>
+
+  <insert id="insert" parameterType="com.restaurant.entity.DishGroup">
+    insert into dish_group (dg_id, name, r_id
+      )
+    values (#{dgId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{rId,jdbcType=INTEGER}
+      )
+  </insert>
+
+  <insert id="insertSelective" parameterType="com.restaurant.entity.DishGroup">
+    insert into dish_group
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="dgId != null">
+        dg_id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="rId != null">
+        r_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="dgId != null">
+        #{dgId,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="rId != null">
+        #{rId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.DishGroup">
+    update dish_group
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="rId != null">
+        r_id = #{rId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where g_id = #{gId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.DishGroup">
+    update dish_group
+    set name = #{name,jdbcType=VARCHAR},
+      r_id = #{rId,jdbcType=INTEGER}
+    where dg_id = #{dgId,jdbcType=INTEGER}
+  </update>
+</mapper>

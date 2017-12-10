@@ -21,4 +21,9 @@ public class WaiterServiceImpl implements com.restaurant.service.WaiterService {
     public List<Waiter> selectByRId(int rId) {
         return waiterDao.selectByRId(rId);
     }
+
+    @Override
+    public Waiter selectById(int wId) {
+        return waiterDao.selectById(wId);
+    }
 }

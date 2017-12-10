@@ -5,13 +5,13 @@ import com.restaurant.entity.TableGroup;
 import java.util.List;
 
 public interface TableGroupDao {
-    int deleteByPrimaryKey(Integer gId);
+    int deleteByPrimaryKey(Integer tgId);
 
     int insert(TableGroup record);
 
     int insertSelective(TableGroup record);
 
-    TableGroup selectByPrimaryKey(Integer gId);
+    TableGroup selectById(Integer tgId);
 
     List<TableGroup> selectByRId(Integer rId);
 

@@ -12,7 +12,7 @@ public interface WaiterDao {
 
     int insertSelective(Waiter record);
 
-    Waiter selectByPrimaryKey(Integer wId);
+    Waiter selectById(Integer wId);
 
     List<Waiter> selectByRId(Integer rId);
 

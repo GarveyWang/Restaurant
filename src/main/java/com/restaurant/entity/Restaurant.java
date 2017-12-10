@@ -22,6 +22,12 @@ public class Restaurant {
     @Resource
     private List<TableGroup> tableGroups;
 
+    @Resource
+    private List<DishGroup> dishGroups;
+
+    @Resource
+    private List<OrderForm> orderForms;
+
     public Cashier getCashier() {
         return cashier;
     }
@@ -54,6 +60,14 @@ public class Restaurant {
         this.tableGroups = tableGroups;
     }
 
+    public List<DishGroup> getDishGroups() {
+        return dishGroups;
+    }
+
+    public void setDishGroups(List<DishGroup> dishGroups) {
+        this.dishGroups = dishGroups;
+    }
+
     public Integer getrId() {
         return rId;
     }
@@ -76,5 +90,13 @@ public class Restaurant {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    public List<OrderForm> getOrderForms() {
+        return orderForms;
+    }
+
+    public void setOrderForms(List<OrderForm> orderForms) {
+        this.orderForms = orderForms;
     }
 }

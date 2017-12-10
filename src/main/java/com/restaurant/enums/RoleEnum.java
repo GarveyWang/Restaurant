@@ -4,7 +4,8 @@ public enum RoleEnum {
     ADMIN(0,"admin"),
     WAITER(1,"waiter"),
     CASHIER(2,"cashier"),
-    KITCHEN(3,"kitchen");
+    KITCHEN(3,"kitchen"),
+    CUSTOMER(4,"customer");
 
     private int roleCode;
 

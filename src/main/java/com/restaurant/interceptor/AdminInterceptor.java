@@ -16,6 +16,7 @@ public class AdminInterceptor implements HandlerInterceptor {
         if(session.getAttribute("rId")==null){
             httpServletResponse.setCharacterEncoding("UTF-8");
             httpServletRequest.getRequestDispatcher("login").include(httpServletRequest,httpServletResponse);
+            System.out.println("拦截");
             return false;
         }
         return true;

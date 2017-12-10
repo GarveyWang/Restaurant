@@ -9,17 +9,25 @@
     <result column="cost" jdbcType="INTEGER" property="cost" />
     <result column="active" jdbcType="TINYINT" property="active" />
     <result column="status" jdbcType="VARCHAR" property="status" />
-    <result column="o_id" jdbcType="INTEGER" property="oId" />
+    <result column="dg_id" jdbcType="INTEGER" property="dgId" />
   </resultMap>
   <sql id="Dish_Column_List">
-    d_id, name, description, price, cost, active, status, o_id
+    d_id, name, description, price, cost, active, status, dg_id
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="DishResultMap">
+  <select id="selectById" parameterType="java.lang.Integer" resultMap="DishResultMap">
     select 
     <include refid="Dish_Column_List" />
     from dish
     where d_id = #{dId,jdbcType=INTEGER}
   </select>
+
+  <select id="selectByDgId" parameterType="java.lang.Integer" resultMap="DishResultMap">
+    select
+    <include refid="Dish_Column_List" />
+    from dish
+    where dg_id = #{dgId,jdbcType=INTEGER}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from dish
     where d_id = #{dId,jdbcType=INTEGER}
@@ -27,10 +35,10 @@
   <insert id="insert" parameterType="com.restaurant.entity.Dish">
     insert into dish (d_id, name, description, 
       price, cost, active, 
-      status, o_id)
+      status, dg_id)
     values (#{dId,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
       #{price,jdbcType=INTEGER}, #{cost,jdbcType=INTEGER}, #{active,jdbcType=TINYINT}, 
-      #{status,jdbcType=VARCHAR}, #{oId,jdbcType=INTEGER})
+      #{status,jdbcType=VARCHAR}, #{dgId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.restaurant.entity.Dish">
     insert into dish
@@ -56,8 +64,8 @@
       <if test="status != null">
         status,
       </if>
-      <if test="oId != null">
-        o_id,
+      <if test="dgId != null">
+        dg_id,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -82,8 +90,8 @@
       <if test="status != null">
         #{status,jdbcType=VARCHAR},
       </if>
-      <if test="oId != null">
-        #{oId,jdbcType=INTEGER},
+      <if test="dgId != null">
+        #{dgId,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -108,8 +116,8 @@
       <if test="status != null">
         status = #{status,jdbcType=VARCHAR},
       </if>
-      <if test="oId != null">
-        o_id = #{oId,jdbcType=INTEGER},
+      <if test="dgId != null">
+        dg_id = #{dgId,jdbcType=INTEGER},
       </if>
     </set>
     where d_id = #{dId,jdbcType=INTEGER}
@@ -122,7 +130,7 @@
       cost = #{cost,jdbcType=INTEGER},
       active = #{active,jdbcType=TINYINT},
       status = #{status,jdbcType=VARCHAR},
-      o_id = #{oId,jdbcType=INTEGER}
+      dg_id = #{dgId,jdbcType=INTEGER}
     where d_id = #{dId,jdbcType=INTEGER}
   </update>
 </mapper>

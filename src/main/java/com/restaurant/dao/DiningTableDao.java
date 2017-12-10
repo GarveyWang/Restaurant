@@ -11,9 +11,9 @@ public interface DiningTableDao {
 
     int insertSelective(DiningTable record);
 
-    DiningTable selectByPrimaryKey(Integer tId);
+    DiningTable selectById(Integer tId);
 
-    List<DiningTable> selectByGId(Integer gId);
+    List<DiningTable> selectByTgId(Integer tgId);
 
     int updateByPrimaryKeySelective(DiningTable record);
 

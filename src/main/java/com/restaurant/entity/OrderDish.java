@@ -1,16 +1,22 @@
 package com.restaurant.entity;
 
+import java.util.Date;
+
 public class OrderDish extends OrderDishKey {
-    private String description;
+    private String remark;
 
     private String status;
 
-    public String getDescription() {
-        return description;
+    private Integer number;
+
+    private Date orderTime;
+
+    public String getRemark() {
+        return remark;
     }
 
-    public void setDescription(String description) {
-        this.description = description == null ? null : description.trim();
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
     }
 
     public String getStatus() {
@@ -19,5 +25,21 @@ public class OrderDish extends OrderDishKey {
 
     public void setStatus(String status) {
         this.status = status == null ? null : status.trim();
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public Date getOrderTime() {
+        return orderTime;
+    }
+
+    public void setOrderTime(Date orderTime) {
+        this.orderTime = orderTime;
     }
 }

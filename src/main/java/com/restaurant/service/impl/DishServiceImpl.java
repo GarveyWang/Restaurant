@@ -5,6 +5,7 @@ import com.restaurant.entity.Dish;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service("dishService")
 public class DishServiceImpl implements com.restaurant.service.DishService {
@@ -14,5 +15,10 @@ public class DishServiceImpl implements com.restaurant.service.DishService {
     @Override
     public int insertSelective(Dish record) {
         return dishDao.insertSelective(record);
+    }
+
+    @Override
+    public Dish selectById(Integer dId) {
+        return dishDao.selectById(dId);
     }
 }

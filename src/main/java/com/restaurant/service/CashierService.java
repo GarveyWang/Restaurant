@@ -6,4 +6,6 @@ public interface CashierService {
     public int insertSelective(Cashier record);
 
     public Cashier selectByRId(int rId);
+
+    public Cashier selectById(int cId);
 }
