@@ -3,9 +3,11 @@ package com.restaurant.dto;
 import java.util.Date;
 
 public class KitchenTaskItem {
+    private int oId;
     private int dId;
     private String dishName;
-    private int number;
+    private int orderNumber;
+    private int serveNumber;
     private String remark;
     private String tableGroupName;
     private String tableName;
@@ -15,12 +17,22 @@ public class KitchenTaskItem {
     public KitchenTaskItem() {
     }
 
-    public KitchenTaskItem(int dId, int number, String remark, Date orderTime, String state) {
+    public KitchenTaskItem(int oId, int dId, int orderNumber, int serveNumber, String remark, Date orderTime, String state) {
+        this.oId = oId;
         this.dId = dId;
-        this.number = number;
+        this.orderNumber = orderNumber;
+        this.serveNumber = serveNumber;
         this.remark = remark;
         this.orderTime = orderTime;
         this.state = state;
+    }
+
+    public int getoId() {
+        return oId;
+    }
+
+    public void setoId(int oId) {
+        this.oId = oId;
     }
 
     public int getdId() {
@@ -39,12 +51,20 @@ public class KitchenTaskItem {
         this.dishName = dishName;
     }
 
-    public int getNumber() {
-        return number;
+    public int getOrderNumber() {
+        return orderNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setOrderNumber(int orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public int getServeNumber() {
+        return serveNumber;
+    }
+
+    public void setServeNumber(int serveNumber) {
+        this.serveNumber = serveNumber;
     }
 
     public String getRemark() {

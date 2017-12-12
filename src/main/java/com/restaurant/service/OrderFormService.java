@@ -1,13 +1,19 @@
 package com.restaurant.service;
 
 import com.restaurant.entity.OrderForm;
+import com.restaurant.enums.RegisterStateEnum;
+import com.restaurant.enums.UpdateStateEnum;
 
 import java.util.List;
 
 public interface OrderFormService {
-    public int insertSelective(OrderForm record);
+    int insertSelective(OrderForm record);
 
-    public OrderForm selectNotEndByTId(int tId);
+    OrderForm selectNotEndByTId(int tId);
 
-    public List<OrderForm> selectNotEndByRId(int rId);
+    List<OrderForm> selectNotEndByRId(int rId);
+
+    RegisterStateEnum register(int rId, int tId);
+
+    UpdateStateEnum end(OrderForm orderForm);
 }

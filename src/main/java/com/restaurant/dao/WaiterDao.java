@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface WaiterDao {
 
-    int deleteByPrimaryKey(Integer wId);
+    int deleteById(Integer wId);
 
     int insert(Waiter record);
 

@@ -34,6 +34,12 @@
     delete from dining_table
     where t_id = #{tId,jdbcType=INTEGER}
   </delete>
+
+  <delete id="deleteByTgId" parameterType="java.lang.Integer">
+    delete from dining_table
+    where tg_id = #{tgId,jdbcType=INTEGER}
+  </delete>
+
   <insert id="insert" parameterType="com.restaurant.entity.DiningTable">
     insert into dining_table (t_id, name, description, 
       capacity, guest_number, service_code, 

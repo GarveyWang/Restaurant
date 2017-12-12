@@ -7,6 +7,8 @@ import java.util.List;
 public interface DishDao {
     int deleteByPrimaryKey(Integer dId);
 
+    int deleteByDgId(Integer dgId);
+
     int insert(Dish record);
 
     int insertSelective(Dish record);

@@ -32,6 +32,12 @@
     delete from dish
     where d_id = #{dId,jdbcType=INTEGER}
   </delete>
+
+  <delete id="deleteByDgId" parameterType="java.lang.Integer">
+    delete from dish
+    where dg_id = #{dgId,jdbcType=INTEGER}
+  </delete>
+
   <insert id="insert" parameterType="com.restaurant.entity.Dish">
     insert into dish (d_id, name, description, 
       price, cost, active, 

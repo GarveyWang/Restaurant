@@ -27,7 +27,7 @@
     where r_id = #{rId,jdbcType=INTEGER}
   </select>
 
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+  <delete id="deleteById" parameterType="java.lang.Integer">
     delete from kitchen
     where k_id = #{kId,jdbcType=INTEGER}
   </delete>
@@ -95,8 +95,9 @@
     </set>
     where k_id = #{kId,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.Kitchen">
-    update kitchen
+    update ignore kitchen
     set password = #{password,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},
       active = #{active,jdbcType=TINYINT},

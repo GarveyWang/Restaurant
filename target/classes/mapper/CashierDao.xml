@@ -27,17 +27,17 @@
   </select>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from cashier
+    delete ignore from cashier
     where c_id = #{cId,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.restaurant.entity.Cashier">
-    insert into cashier (c_id, password, active, 
+    insert ignore into cashier (c_id, password, active,
       r_id)
     values (#{cId,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR}, #{active,jdbcType=TINYINT}, 
       #{rId,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.restaurant.entity.Cashier">
-    insert into cashier
+    insert ignore into cashier
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="cId != null">
         c_id,
@@ -68,7 +68,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.Cashier">
-    update cashier
+    update ignore cashier
     <set>
       <if test="password != null">
         password = #{password,jdbcType=VARCHAR},
@@ -83,7 +83,7 @@
     where c_id = #{cId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.Cashier">
-    update cashier
+    update ignore cashier
     set password = #{password,jdbcType=VARCHAR},
       active = #{active,jdbcType=TINYINT},
       r_id = #{rId,jdbcType=INTEGER}

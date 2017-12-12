@@ -1,16 +1,16 @@
 package com.restaurant.web;
 
 import com.restaurant.entity.*;
-import com.restaurant.enums.LoginStateEnum;
-import com.restaurant.enums.RegisterStateEnum;
-import com.restaurant.enums.RoleEnum;
+import com.restaurant.enums.*;
 import com.restaurant.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -37,25 +37,16 @@ public class AccountController {
     }
 
     @RequestMapping(value = "/adminlogin",method = RequestMethod.POST)
-    public String adminLogin(Restaurant restaurant, HttpServletRequest request, RedirectAttributes attributes, Model model){
-        //如果登录信息不完整，返回并提示
-        if(restaurant==null||restaurant.getrId()==null||"".equals(restaurant.getrId())
-                ||restaurant.getPassword()==null||"".equals(restaurant.getPassword())){
-            model.addAttribute("msg",LoginStateEnum.IMCOMPLETE.getStateInfo());
-            model.addAttribute("rId",restaurant.getrId());
+    public String adminLogin(Restaurant rest, HttpServletRequest request, RedirectAttributes attributes, Model model){
+
+        LoginStateEnum loginState=restaurantService.validate(rest);
+        if(loginState!=LoginStateEnum.SUCCESS){
+            model.addAttribute("msg", loginState.getStateInfo());
+            model.addAttribute("rId",rest.getrId());
             return "login";
         }
 
-        //比对数据库，如果账号不存在或者密码错误，返回并提示
-        Restaurant restaurantFromDB=restaurantService.selectRestaurantById(restaurant.getrId());
-        if(restaurantFromDB==null||
-                !restaurantFromDB.getPassword().equals(restaurant.getPassword())){
-            model.addAttribute("msg", LoginStateEnum.INFO_ERROR.getStateInfo());
-            model.addAttribute("rId",restaurant.getrId());
-            return "login";
-        }
-
-        int rId=restaurant.getrId();
+        int rId=rest.getrId();
         HttpSession session=request.getSession();
         session.setAttribute("roleCode", RoleEnum.ADMIN.getRoleCode());
         session.setAttribute("rId",rId);
@@ -68,29 +59,19 @@ public class AccountController {
     @RequestMapping(value = "/waiterlogin",method = RequestMethod.POST)
     public String waiterLogin(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
-        //如果登录信息不完整，返回并提示
-        if(waiter==null||waiter.getwId()==null||"".equals(waiter.getwId())
-                ||waiter.getPassword()==null||"".equals(waiter.getPassword())){
-            model.addAttribute("msg",LoginStateEnum.IMCOMPLETE.getStateInfo());
+        LoginStateEnum loginState=waiterService.validate(waiter);
+        if(loginState!=LoginStateEnum.SUCCESS){
+            model.addAttribute("msg",loginState.getStateInfo());
             model.addAttribute("wId",waiter.getwId());
             return "login";
         }
 
-        //比对数据库，如果账号不存在或者密码错误，返回并提示
-        Waiter waiterFromDB=waiterService.selectById(waiter.getwId());
-        if(waiterFromDB==null||
-                !waiterFromDB.getPassword().equals(waiter.getPassword())){
-            model.addAttribute("msg", LoginStateEnum.INFO_ERROR.getStateInfo());
-            model.addAttribute("wId",waiter.getwId());
-            return "login";
-        }
-
-        int rId=waiterFromDB.getrId();
+        int rId=waiter.getrId();
         int wId=waiter.getwId();
         HttpSession session=request.getSession();
         session.setAttribute("roleCode", RoleEnum.WAITER.getRoleCode());
-        session.setAttribute("rId",rId);
         session.setAttribute("wId",wId);
+        session.setAttribute("rId",rId);
 
         model.addAttribute("rId",rId);
         attributes.addFlashAttribute("rId",rId);
@@ -100,25 +81,16 @@ public class AccountController {
     @RequestMapping(value = "/kitchenlogin",method = RequestMethod.POST)
     public String kitchenLogin(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
-        //如果登录信息不完整，返回并提示
-        if(kitchen==null||kitchen.getkId()==null||"".equals(kitchen.getkId())
-                ||kitchen.getPassword()==null||"".equals(kitchen.getPassword())){
-            model.addAttribute("msg",LoginStateEnum.IMCOMPLETE.getStateInfo());
+        LoginStateEnum loginState=kitchenService.validate(kitchen);
+        if(loginState!=LoginStateEnum.SUCCESS){
+            model.addAttribute("msg",loginState.getStateInfo());
             model.addAttribute("kId",kitchen.getkId());
             return "login";
         }
 
-        //比对数据库，如果账号不存在或者密码错误，返回并提示
-        Kitchen kitchenFromDB=kitchenService.selectById(kitchen.getkId());
-        if(kitchenFromDB==null||
-                !kitchenFromDB.getPassword().equals(kitchen.getPassword())){
-            model.addAttribute("msg", LoginStateEnum.INFO_ERROR.getStateInfo());
-            model.addAttribute("kId",kitchen.getkId());
-            return "login";
-        }
-
-        int rId=kitchenFromDB.getrId();
+        int rId=kitchen.getrId();
         int kId=kitchen.getkId();
+
         HttpSession session=request.getSession();
         session.setAttribute("roleCode", RoleEnum.KITCHEN.getRoleCode());
         session.setAttribute("rId",rId);
@@ -132,25 +104,16 @@ public class AccountController {
     @RequestMapping(value = "/cashierlogin",method = RequestMethod.POST)
     public String CashierLogin(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
-        //如果登录信息不完整，返回并提示
-        if(cashier==null||cashier.getcId()==null||"".equals(cashier.getcId())
-                ||cashier.getPassword()==null||"".equals(cashier.getPassword())){
-            model.addAttribute("msg",LoginStateEnum.IMCOMPLETE.getStateInfo());
+        LoginStateEnum loginState=cashierService.validate(cashier);
+        if(loginState!=LoginStateEnum.SUCCESS){
+            model.addAttribute("msg",loginState.getStateInfo());
             model.addAttribute("cId",cashier.getcId());
             return "login";
         }
 
-        //比对数据库，如果账号不存在或者密码错误，返回并提示
-        Cashier cashierFromDB=cashierService.selectById(cashier.getcId());
-        if(cashierFromDB==null||
-                !cashierFromDB.getPassword().equals(cashier.getPassword())){
-            model.addAttribute("msg", LoginStateEnum.INFO_ERROR.getStateInfo());
-            model.addAttribute("cId",cashier.getcId());
-            return "login";
-        }
-
-        int rId=cashierFromDB.getrId();
+        int rId=cashier.getrId();
         int cId=cashier.getcId();
+
         HttpSession session=request.getSession();
         session.setAttribute("roleCode", RoleEnum.CASHIER.getRoleCode());
         session.setAttribute("rId",rId);
@@ -161,37 +124,158 @@ public class AccountController {
         return "redirect:/cashier/"+rId+"/task";
     }
 
-
-    @RequestMapping(value = "/register",method = RequestMethod.GET)
+    @RequestMapping(value = "/restreg",method = RequestMethod.GET)
     public String register( Model model){
         return "register";
     }
 
-    @RequestMapping(value = "/register",
+    @RequestMapping(value = "/restaurant/add",
             method = RequestMethod.POST)
-    public String register(Restaurant restaurant, Model model){
-        //如果有账号信息缺失，提示账号信息不完整
-        if(restaurant==null||restaurant.getName()==null||"".equals(restaurant.getName())
-                ||restaurant.getrId()==null||"".equals(restaurant.getrId())
-                ||restaurant.getPassword()==null||"".equals(restaurant.getPassword())){
-            model.addAttribute("msg", RegisterStateEnum.IMCOMPLETE.getStateInfo());
+    public String restaurantRegister(Restaurant restaurant, Model model){
+        RegisterStateEnum registerState=restaurantService.register(restaurant);
+        if(registerState!=RegisterStateEnum.SUCCESS){
+            model.addAttribute("msg", registerState.getStateInfo());
             model.addAttribute("restaurant",restaurant);
             return "register";
         }
 
-        int insertCount=restaurantService.insert(restaurant);
-        //如果插入条数为0，说明主键冲突，该账号已经存在
-        //如果插入条数为1，说明插入成功，跳转登录界面
-        if(insertCount<1){
-            model.addAttribute("msg",RegisterStateEnum.ID_REPEAT.getStateInfo());
-            model.addAttribute("restaurant",restaurant);
-            return "register";
-        }else{
-            model.addAttribute("msg",RegisterStateEnum.SUCCESS.getStateInfo());
-            model.addAttribute("rId",restaurant.getrId());
-            return "login";
-        }
+        int rId=restaurant.getrId();
+        cashierService.registerByRId(rId);
+
+        model.addAttribute("msg",registerState.getStateInfo());
+        model.addAttribute("rId",rId);
+        return "login";
+    }
+
+    @RequestMapping(value = "/waiter/add",
+            method = RequestMethod.POST)
+    public String waiterRegister(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+        waiter.setrId(sessionRId);
+        waiter.setActive(new Byte("1"));
+        RegisterStateEnum registerState=waiterService.register(waiter);
+
+        modelMap.addFlashAttribute("msg",registerState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
+
+    @RequestMapping(value = "/kitchen/add",
+            method = RequestMethod.POST)
+    public String kitchenRegister(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+        kitchen.setActive(new Byte("1"));
+        kitchen.setrId(sessionRId);
+        RegisterStateEnum registerState=kitchenService.register(kitchen);
+
+        modelMap.addFlashAttribute("msg",registerState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+
+        return "redirect:/restaurant/"+sessionRId+"/employee";
     }
 
 
+    @RequestMapping(value = "/waiter/{wId}/delete",
+            method = RequestMethod.GET)
+    public String waiterDelete(@PathVariable("wId") int wId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+
+        DeleteStateEnum deleteState=null;
+
+        if(sessionRId == waiterService.getRIdByWId(wId)){
+            deleteState=waiterService.deleteById(wId);
+        }else {
+            deleteState=DeleteStateEnum.FAILED;
+        }
+
+        modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
+
+    @RequestMapping(value = "/kitchen/{kId}/delete",
+            method = RequestMethod.GET)
+    public String kitchenDelete(@PathVariable("kId") int wId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+
+        DeleteStateEnum deleteState=null;
+
+        if(sessionRId == kitchenService.getRIdByKId(wId)){
+            deleteState=kitchenService.deleteById(wId);
+        }else {
+            deleteState=DeleteStateEnum.FAILED;
+        }
+
+        modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
+
+
+    @RequestMapping(value = "/waiter/{wId}/update",
+            method = RequestMethod.POST)
+    public String waiterUpdate(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+
+        UpdateStateEnum updateState=null;
+
+        if(sessionRId == waiterService.getRIdByWId(waiter.getwId())){
+            waiter.setrId(sessionRId);
+            updateState=waiterService.update(waiter);
+        }else {
+            updateState=UpdateStateEnum.FAILED;
+        }
+
+        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
+
+    @RequestMapping(value = "/kitchen/{kId}/update",
+            method = RequestMethod.POST)
+    public String kitchenUpdate(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+
+        UpdateStateEnum updateState=null;
+
+        if(sessionRId == kitchenService.getRIdByKId(kitchen.getkId())){
+            kitchen.setrId(sessionRId);
+            updateState=kitchenService.update(kitchen);
+        }else {
+            updateState=UpdateStateEnum.FAILED;
+        }
+
+        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
+
+
+    @RequestMapping(value = "/cashier/{cId}/update",
+            method = RequestMethod.POST)
+    public String cashierUpdate(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+        HttpSession session=request.getSession();
+        int sessionRId=(int)session.getAttribute("rId");
+
+        cashier.setrId(sessionRId);
+        UpdateStateEnum updateState=null;
+
+        if(cashier.getcId() == sessionRId){
+            cashier.setrId(sessionRId);
+            updateState=cashierService.update(cashier);
+        }else {
+            updateState=UpdateStateEnum.FAILED;
+        }
+
+        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
+        attributes.addFlashAttribute("rId",sessionRId);
+        return "redirect:/restaurant/"+sessionRId+"/employee";
+    }
 }

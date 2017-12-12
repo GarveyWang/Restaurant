@@ -1,27 +1,19 @@
 package com.restaurant.web;
 
-import com.restaurant.dao.TableGroupDao;
 import com.restaurant.entity.*;
-import com.restaurant.enums.LoginStateEnum;
-import com.restaurant.enums.RegisterStateEnum;
-import com.restaurant.enums.RoleEnum;
 import com.restaurant.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
 @RequestMapping("/restaurant")
 @SessionAttributes({"restaurant"})
 public class RestaurantController {
-    @Autowired
-    private RestaurantService restaurantService;
 
     @Autowired
     private WaiterService waiterService;
@@ -35,11 +27,10 @@ public class RestaurantController {
     @Autowired
     private TableGroupService tableGroupService;
 
+
     @Autowired
     private DishGroupService dishGroupService;
 
-    @Autowired
-    private DiningTableService diningTableService;
 
     @RequestMapping(value = "/{rId}/admin",
             method = RequestMethod.GET)
@@ -67,7 +58,10 @@ public class RestaurantController {
     public String tableGroup(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<TableGroup>tableGroupList=tableGroupService.selectByRId(sessionRId);
+
+        int tableCount=tableGroupService.getTableCount(tableGroupList);
         model.addAttribute("tableGroupList",tableGroupList);
+        model.addAttribute("tableCount",tableCount);
         return "table";
     }
 
@@ -75,7 +69,10 @@ public class RestaurantController {
     public String dishGroup(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<DishGroup>dishGroupList=dishGroupService.selectByRId(sessionRId);
+
+        int dishCount=dishGroupService.getDishCount(dishGroupList);
         model.addAttribute("dishGroupList",dishGroupList);
+        model.addAttribute("dishCount",dishCount);
         return "dish";
     }
 

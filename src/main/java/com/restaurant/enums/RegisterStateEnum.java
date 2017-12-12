@@ -3,7 +3,8 @@ package com.restaurant.enums;
 public enum RegisterStateEnum {
     SUCCESS(0,"注册成功！"),
     ID_REPEAT(1,"账号已存在！"),
-    IMCOMPLETE(2,"账号信息不完整！");
+    IMCOMPLETE(2,"账号信息不完整！"),
+    FAILED(3,"注册失败");
 
     private int state;
 

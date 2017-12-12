@@ -7,6 +7,14 @@ public class OrderDishKey {
 
     private Integer dId;
 
+    public OrderDishKey() {
+    }
+
+    public OrderDishKey(Integer oId, Integer dId) {
+        this.oId = oId;
+        this.dId = dId;
+    }
+
     @Resource
     private OrderForm order;
 

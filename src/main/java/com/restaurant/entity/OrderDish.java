@@ -7,7 +7,9 @@ public class OrderDish extends OrderDishKey {
 
     private String status;
 
-    private Integer number;
+    private Integer orderNumber;
+
+    private Integer serveNumber;
 
     private Date orderTime;
 
@@ -27,12 +29,20 @@ public class OrderDish extends OrderDishKey {
         this.status = status == null ? null : status.trim();
     }
 
-    public Integer getNumber() {
-        return number;
+    public Integer getOrderNumber() {
+        return orderNumber;
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public void setOrderNumber(Integer orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public Integer getServeNumber() {
+        return serveNumber;
+    }
+
+    public void setServeNumber(Integer serveNumber) {
+        this.serveNumber = serveNumber;
     }
 
     public Date getOrderTime() {

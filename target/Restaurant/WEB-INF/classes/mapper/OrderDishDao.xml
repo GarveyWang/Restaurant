@@ -5,14 +5,15 @@
   <resultMap id="OrderDishResultMap" type="com.restaurant.entity.OrderDish">
     <id column="o_id" jdbcType="INTEGER" property="oId" />
     <id column="d_id" jdbcType="INTEGER" property="dId" />
-    <id column="number" jdbcType="INTEGER" property="number" />
+    <id column="order_number" jdbcType="INTEGER" property="orderNumber" />
+    <id column="serve_number" jdbcType="INTEGER" property="serveNumber" />
     <result column="remark" jdbcType="VARCHAR" property="remark" />
     <result column="status" jdbcType="VARCHAR" property="status" />
     <result column="order_time" jdbcType="TIMESTAMP" property="orderTime" />
   </resultMap>
 
   <sql id="Order_Dish_Column_List">
-    o_id, d_id, number, remark, status, order_time
+    o_id, d_id, order_number, serve_number, remark, status, order_time
   </sql>
 
   <select id="selectByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
@@ -44,14 +45,14 @@
   </delete>
 
   <insert id="insert" parameterType="com.restaurant.entity.OrderDish">
-    insert into order_dish (o_id, d_id, number, remark,
+    insert ignore into order_dish (o_id, d_id, order_number, serve_number, remark,
       status, order_time)
-    values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{number,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR},
+    values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{orderNumber,jdbcType=INTEGER}, #{serveNumber,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR},
       #{status,jdbcType=VARCHAR}, #{orderTime,jdbcType=TIMESTAMP})
   </insert>
 
   <insert id="insertSelective" parameterType="com.restaurant.entity.OrderDish">
-    insert into order_dish
+    insert ignore into order_dish
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="oId != null">
         o_id,
@@ -59,8 +60,11 @@
       <if test="dId != null">
         d_id,
       </if>
-      <if test="number != null">
-        number,
+      <if test="orderNumber != null">
+        order_number,
+      </if>
+      <if test="serveNumber != null">
+        serve_number,
       </if>
       <if test="remark != null">
         remark,
@@ -79,8 +83,11 @@
       <if test="dId != null">
         #{dId,jdbcType=INTEGER},
       </if>
-      <if test="number != null">
-        #{number,jdbcType=INTEGER},
+      <if test="orderNumber != null">
+        #{orderNumber,jdbcType=INTEGER},
+      </if>
+      <if test="serveNumber != null">
+        #{serveNumber,jdbcType=INTEGER},
       </if>
       <if test="remark != null">
         #{remark,jdbcType=VARCHAR},
@@ -93,11 +100,15 @@
       </if>
     </trim>
   </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.restaurant.entity.OrderDish">
-    update order_dish
+    update ignore order_dish
     <set>
-      <if test="number != null">
-        number = #{number,jdbcType=INTEGER},
+      <if test="orderNumber != null">
+        order_number = #{orderNumber,jdbcType=INTEGER},
+      </if>
+      <if test="serveNumber != null">
+        serve_number = #{serveNumber,jdbcType=INTEGER},
       </if>
       <if test="remark != null">
         remark = #{remark,jdbcType=VARCHAR},
@@ -112,13 +123,23 @@
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKey" parameterType="com.restaurant.entity.OrderDish">
-    update order_dish
-    set number = #{number,jdbcType=INTEGER},
+    update ignore order_dish
+    set order_number = #{orderNumber,jdbcType=INTEGER},
+      serve_number = #{serveNumber, jdbcType=INTEGER},
       remark = #{remark,jdbcType=VARCHAR},
       status = #{status,jdbcType=VARCHAR},
       order_time = #{orderTime, jdbcType=TIMESTAMP}
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
+  </update>
+
+  <update id="addServeNumber" parameterType="com.restaurant.entity.OrderDishKey">
+    update ignore order_dish
+    set
+    serve_number = serve_number + 1
+    where o_id = #{oId,jdbcType=INTEGER}
+    and d_id = #{dId,jdbcType=INTEGER}
   </update>
 </mapper>

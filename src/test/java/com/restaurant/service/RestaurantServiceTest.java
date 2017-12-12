@@ -29,7 +29,7 @@ public class RestaurantServiceTest {
     @Test
     public void selectRestaurantById() throws Exception {
         int id=1;
-        Restaurant restaurant=restaurantService.selectRestaurantById(id);
+        Restaurant restaurant=restaurantService.selectById(id);
         System.out.println(restaurant.getName());
     }
 

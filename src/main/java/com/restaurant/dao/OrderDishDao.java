@@ -23,5 +23,5 @@ public interface OrderDishDao {
 
     List<OrderDish> selectNotEndByOId(int oId);
 
-    
+    int addServeNumber(OrderDishKey key);
 }

@@ -6,7 +6,8 @@ public class OrderFormItem {
     private int dId;
     private String name;
     private int price;
-    private int number;
+    private int orderNumber;
+    private int serveNumber;
     private String remark;
     private String state;
     private Date orderTime;
@@ -14,9 +15,10 @@ public class OrderFormItem {
     public OrderFormItem() {
     }
 
-    public OrderFormItem(int dId, int number, String remark, String state, Date orderTime) {
+    public OrderFormItem(int dId, int orderNumber, int serveNumber, String remark, String state, Date orderTime) {
         this.dId = dId;
-        this.number = number;
+        this.orderNumber = orderNumber;
+        this.serveNumber = serveNumber;
         this.remark = remark;
         this.state = state;
         this.orderTime=orderTime;
@@ -54,12 +56,20 @@ public class OrderFormItem {
         this.remark = remark;
     }
 
-    public int getNumber() {
-        return number;
+    public int getOrderNumber() {
+        return orderNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setOrderNumber(int orderNumber) {
+        this.orderNumber = orderNumber;
+    }
+
+    public int getServeNumber() {
+        return serveNumber;
+    }
+
+    public void setServeNumber(int serveNumber) {
+        this.serveNumber = serveNumber;
     }
 
     public String getState() {

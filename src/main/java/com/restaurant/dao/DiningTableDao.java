@@ -7,6 +7,8 @@ import java.util.List;
 public interface DiningTableDao {
     int deleteByPrimaryKey(Integer tId);
 
+    int deleteByTgId(Integer tgId);
+
     int insert(DiningTable record);
 
     int insertSelective(DiningTable record);

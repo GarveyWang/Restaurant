@@ -96,7 +96,7 @@
     where r_id = #{rId,jdbcType=INTEGER}
   </update>
   <update id="updateById" parameterType="com.restaurant.entity.Restaurant">
-    update restaurant
+    update ignore restaurant
     set password = #{password,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR}
     where r_id = #{rId,jdbcType=INTEGER}

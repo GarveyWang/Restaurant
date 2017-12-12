@@ -9,7 +9,7 @@
         <div>
             ${msg}
         </div>
-        <form role="form" method="post" action="/restaurant/register">
+        <form role="form" method="post" action="/account/restaurant/add">
             <div class="form-group">
                 <label for="r_id">餐馆ID</label>
                 <input type="text" class="form-control" id="r_id" name="rId" placeholder="请输入餐馆ID" value="${restaurant.rId}">

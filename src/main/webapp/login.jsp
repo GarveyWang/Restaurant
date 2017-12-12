@@ -68,7 +68,7 @@
         </div>
         <button type="submit" class="btn btn-default">管理员登录</button>
     </form>
-    <form role="form" method="get" action="/account/register">
+    <form role="form" method="get" action="/account/restreg">
         <button type="submit" class="btn btn-default">注册</button>
     </form>
 </div>

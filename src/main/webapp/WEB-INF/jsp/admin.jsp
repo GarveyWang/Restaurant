@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>t</title>
+    <title>餐馆控制台</title>
     <%@include file="common/head.jsp"%>
 </head>
 <body>

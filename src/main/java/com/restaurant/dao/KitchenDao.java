@@ -5,7 +5,7 @@ import com.restaurant.entity.Kitchen;
 import java.util.List;
 
 public interface KitchenDao {
-    int deleteByPrimaryKey(Integer kId);
+    int deleteById(Integer kId);
 
     int insert(Kitchen record);
 

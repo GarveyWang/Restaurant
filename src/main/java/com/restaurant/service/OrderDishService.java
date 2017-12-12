@@ -1,13 +1,30 @@
 package com.restaurant.service;
 
+import com.restaurant.dto.OrderFormItem;
 import com.restaurant.entity.OrderDish;
+import com.restaurant.enums.DeleteStateEnum;
+import com.restaurant.enums.RegisterStateEnum;
+import com.restaurant.enums.UpdateStateEnum;
 
 import java.util.List;
 
 public interface OrderDishService {
-    public int insert(OrderDish record);
+    int insert(OrderDish record);
 
-    public List<OrderDish> selectByOId(int oId);
+    List<OrderDish> selectByOId(int oId);
 
-    public List<OrderDish> selectNotEndByOId(int old);
+    List<OrderDish> selectNotEndByOId(int old);
+
+    List<OrderFormItem> selectOrderFormItemByOId(int oId);
+
+    RegisterStateEnum register(OrderDish orderDish);
+
+    DeleteStateEnum deleteByPrimaryKey(int oId, int dId);
+
+    UpdateStateEnum update(OrderDish orderDish);
+
+    UpdateStateEnum cook(OrderDish orderDish);
+
+    UpdateStateEnum serve(OrderDish orderDish);
+
 }
