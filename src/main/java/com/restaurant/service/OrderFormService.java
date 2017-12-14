@@ -16,4 +16,8 @@ public interface OrderFormService {
     RegisterStateEnum register(int rId, int tId);
 
     UpdateStateEnum end(OrderForm orderForm);
+
+    int countTotalPrice(int oId);
+
+    int getTotalPrice(int oId);
 }

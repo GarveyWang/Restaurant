@@ -148,7 +148,7 @@
       total_price = #{totalPrice,jdbcType=INTEGER},
       discount = #{discount,jdbcType=REAL},
       review = #{review,jdbcType=VARCHAR},
-      t_id = #{tId,jdbcType=INTEGER}
+      t_id = #{tId,jdbcType=INTEGER},
       r_id = #{rId,jdbcType=INTEGER}
     where o_id = #{oId,jdbcType=INTEGER}
   </update>

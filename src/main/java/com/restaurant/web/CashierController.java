@@ -34,9 +34,10 @@ public class CashierController {
 
     @RequestMapping(value = "/{oId}/end",
             method = RequestMethod.POST)
-    public String task(OrderForm orderForm, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+    public String end(OrderForm orderForm, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
 
         UpdateStateEnum updateState=orderFormService.end(orderForm);
+
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
         int sessionRId=(int)request.getSession().getAttribute("rId");
         attributes.addFlashAttribute("rId",sessionRId);

@@ -31,7 +31,7 @@
                     <td>${item.totalPrice}</td>
                     <td>${item.discount}</td>
                     <td>
-                        <button class="btn btn-default end_btn" oid="${item.oId}">
+                        <button class="btn btn-default end_btn" oid="${item.oId}" tid="${item.tId}">
                             结束
                         </button>
                     </td>
@@ -53,17 +53,21 @@
     $(function () {
         $('.end_btn').click(function () {
             var oid=$(this).attr('oid');
+            var tid=$(this).attr('tid');
             var action='/cashier/'+ oid +'/end';
             var form = $('<form></form>');
+
 
             form.attr('action', action);
             form.attr('method', 'post');
             form.attr('target', '_self');
 
             var oIdInput = $('<input type="text" name="oId" />');
+            var tIdInput = $('<input type="text" name="tId" />')
             oIdInput.attr('value',oid);
-
+            tIdInput.attr('value',tid);
             form.append(oIdInput);
+            form.append(tIdInput);
 
             form.appendTo("body").submit();
             form.remove();

@@ -34,7 +34,7 @@
 
     <div>
         <table class="table">
-            <caption>订单号：${oId}</caption>
+            <caption>订单号：${oId} &nbsp; &nbsp; 总价： ${totalPrice}</caption>
             <thead>
             <tr>
                 <th>菜品ID</th>
