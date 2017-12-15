@@ -28,17 +28,13 @@ public class RestaurantController {
     private TableGroupService tableGroupService;
 
 
-    @Autowired
-    private DishGroupService dishGroupService;
-
-
     @RequestMapping(value = "/{rId}/admin",
             method = RequestMethod.GET)
     public String admin(@PathVariable int rId, Model model){
         return "admin";
     }
 
-    @RequestMapping(value = "/{rId}/employee",method = RequestMethod.GET)
+    @RequestMapping(value = "/{rId}/admin/employee",method = RequestMethod.GET)
     public String employee(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
 
@@ -54,26 +50,28 @@ public class RestaurantController {
         return "employee";
     }
 
-    @RequestMapping(value = "/{rId}/tablegroup",method = RequestMethod.GET)
-    public String tableGroup(@PathVariable int rId, HttpServletRequest request, Model model){
+    @RequestMapping(value = "/{rId}/admin/tablegroup",method = RequestMethod.GET)
+    public String tableGroupForAdmin(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<TableGroup>tableGroupList=tableGroupService.selectByRId(sessionRId);
 
         int tableCount=tableGroupService.getTableCount(tableGroupList);
+        model.addAttribute("role","admin");
         model.addAttribute("tableGroupList",tableGroupList);
         model.addAttribute("tableCount",tableCount);
         return "table";
     }
 
-    @RequestMapping(value = "/{rId}/dishgroup",method = RequestMethod.GET)
-    public String dishGroup(@PathVariable int rId, HttpServletRequest request, Model model){
+    @RequestMapping(value = "/{rId}/tablegroup",method = RequestMethod.GET)
+    public String tableGroupForWaiter(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
-        List<DishGroup>dishGroupList=dishGroupService.selectByRId(sessionRId);
+        List<TableGroup>tableGroupList=tableGroupService.selectByRId(sessionRId);
 
-        int dishCount=dishGroupService.getDishCount(dishGroupList);
-        model.addAttribute("dishGroupList",dishGroupList);
-        model.addAttribute("dishCount",dishCount);
-        return "dish";
+        int tableCount=tableGroupService.getTableCount(tableGroupList);
+        model.addAttribute("role","waiter");
+        model.addAttribute("tableGroupList",tableGroupList);
+        model.addAttribute("tableCount",tableCount);
+        return "table";
     }
 
 }

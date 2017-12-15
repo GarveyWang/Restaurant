@@ -1,6 +1,7 @@
 package com.restaurant.web;
 
 import com.restaurant.dto.KitchenTaskItem;
+import com.restaurant.entity.DishGroup;
 import com.restaurant.entity.OrderDish;
 import com.restaurant.enums.UpdateStateEnum;
 import com.restaurant.service.*;
@@ -25,6 +26,9 @@ public class KitchenController {
 
     @Autowired
     private OrderDishService orderDishService;
+
+    @Autowired
+    private DishGroupService dishGroupService;
 
     @RequestMapping(value = "/{rId}/task",
             method = RequestMethod.GET)
@@ -59,5 +63,16 @@ public class KitchenController {
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
         return "redirect:/kitchen/"+sessionrId+"/task";
+    }
+
+    @RequestMapping(value = "/{rId}/dishgroup",method = RequestMethod.GET)
+    public String dishGroup(@PathVariable int rId, HttpServletRequest request, Model model){
+        int sessionRId=(int)request.getSession().getAttribute("rId");
+        List<DishGroup>dishGroupList=dishGroupService.selectByRId(sessionRId);
+
+        int dishCount=dishGroupService.getDishCount(dishGroupList);
+        model.addAttribute("dishGroupList",dishGroupList);
+        model.addAttribute("dishCount",dishCount);
+        return "dish";
     }
 }

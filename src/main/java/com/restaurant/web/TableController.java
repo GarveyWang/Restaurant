@@ -41,7 +41,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
@@ -56,7 +56,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/{tId}/delete",method = RequestMethod.GET)
@@ -73,7 +73,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/group/{tgId}/delete",method = RequestMethod.GET)
@@ -90,7 +90,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/group/{tgId}/update",method = RequestMethod.POST)
@@ -108,7 +108,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/{tId}/update",method = RequestMethod.POST)
@@ -125,7 +125,7 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
+        return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
     @RequestMapping(value = "/{tId}/guest/update",method = RequestMethod.POST)

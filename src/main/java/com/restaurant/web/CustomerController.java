@@ -116,7 +116,7 @@ public class CustomerController {
         int sessionTId=(int)session.getAttribute("tId");
         int sessionOId=(int)session.getAttribute("oId");
 
-        DeleteStateEnum deleteState=orderDishService.deleteByPrimaryKey(sessionOId,dId);
+        DeleteStateEnum deleteState=orderDishService.delete(sessionOId,dId);
         orderFormService.countTotalPrice(sessionOId);
 
         attributes.addFlashAttribute("tId",sessionTId);

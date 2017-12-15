@@ -8,109 +8,111 @@
 <body>
 <div class="container">
     <div>${msg}</div>
-    <div class="btn-group">
-        <button class="btn btn-default" id="table_group_reg_form_open_btn">添加餐桌组</button>
-        <c:if test="${tableGroupList.size()!=0}">
-            <button class="btn btn-default" id="table_reg_form_open_btn">添加餐桌</button>
-        </c:if>
-    </div>
-
-
-    <form id="table_group_reg_form" role="form" method="post" action="/table/group/add">
-        <div class="form-group form-inline">
-            <label>餐桌组名称
-                <input type="text" class="form-control" name="name" placeholder="请输入餐桌组名称" value="餐桌组${tableGroupList.size()+1}" >
-            </label>
-            <button type="submit" class="btn btn-default">新建</button>
-            <button type="button" id="table_group_reg_form_close_btn" class="btn btn-default">关闭</button>
+    <c:if test="${role=='admin'}">
+        <div class="btn-group">
+            <button class="btn btn-default" id="table_group_reg_form_open_btn">添加餐桌组</button>
+            <c:if test="${tableGroupList.size()!=0}">
+                <button class="btn btn-default" id="table_reg_form_open_btn">添加餐桌</button>
+            </c:if>
         </div>
-    </form>
 
-    <form id="table_group_update_form" role="form" method="post">
-        <div class="form-group form-inline">
-            <label>餐桌组ID
-                <input type="text" id="tg_id" class="form-control" name="tgId" disabled="disabled">
-            </label>
-            <label>餐桌组名称
-                <input type="text" id="tg_name" class="form-control" name="name" placeholder="请输入餐桌组名称" >
-            </label>
-            <button type="submit" class="btn btn-default">更新</button>
-            <button type="button" id="table_group_update_form_close_btn" class="btn btn-default">关闭</button>
-        </div>
-    </form>
+        <form id="table_group_reg_form" role="form" method="post" action="/table/group/add">
+            <div class="form-group form-inline">
+                <label>餐桌组名称
+                    <input type="text" class="form-control" name="name" placeholder="请输入餐桌组名称" value="餐桌组${tableGroupList.size()+1}" >
+                </label>
+                <button type="submit" class="btn btn-default">新建</button>
+                <button type="button" id="table_group_reg_form_close_btn" class="btn btn-default">关闭</button>
+            </div>
+        </form>
 
-    <form id="table_reg_form" role="form" method="post" action="/table/add">
-        <div class="form-group form-inline">
-            <label>餐桌组ID
-                <select name="tgId" class="form-control">
-                    <c:forEach var="tableGroup" items="${tableGroupList}">
-                        <option value="${tableGroup.tgId}">${tableGroup.name}(${tableGroup.tgId})</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <label>餐桌名称
-                <input type="text" class="form-control" name="name" placeholder="请输入餐桌名称" value="餐桌${tableCount+1}" >
-            </label>
-            <label>描述
-                <input type="text" class="form-control" name="description" placeholder="请输入餐桌描述"  >
-            </label>
-            <label>容量
-                <select name="capacity" class="form-control">
-                    <c:forEach var="i" begin="1" end="20">
-                        <option value="${i}">${i}</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <button type="submit" class="btn btn-default">新建</button>
-            <button type="button" id="table_reg_form_close_btn" class="btn btn-default">关闭</button>
-        </div>
-    </form>
+        <form id="table_group_update_form" role="form" method="post">
+            <div class="form-group form-inline">
+                <label>餐桌组ID
+                    <input type="text" id="tg_id" class="form-control" name="tgId" disabled="disabled">
+                </label>
+                <label>餐桌组名称
+                    <input type="text" id="tg_name" class="form-control" name="name" placeholder="请输入餐桌组名称" >
+                </label>
+                <button type="submit" class="btn btn-default">更新</button>
+                <button type="button" id="table_group_update_form_close_btn" class="btn btn-default">关闭</button>
+            </div>
+        </form>
 
-    <form id="table_update_form" role="form" method="post">
-        <div class="form-group form-inline">
-            <label>餐桌ID
-                <input type="text" id="table_update_t_id" class="form-control" name="tId" disabled="disabled">
-            </label>
-            <label>餐桌组ID
-                <select name="tgId" id="table_update_tg_id" class="form-control">
-                    <c:forEach var="tableGroup" items="${tableGroupList}">
-                        <option value="${tableGroup.tgId}">${tableGroup.name}(${tableGroup.tgId})</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <label>餐桌名称
-                <input type="text" id="table_update_name" class="form-control" name="name" placeholder="请输入餐桌名称"  >
-            </label>
-            <label>描述
-                <input type="text" id="table_update_desc" class="form-control" name="description" placeholder="请输入餐桌描述"  >
-            </label>
-            <label>容量
-                <select name="capacity" id="table_update_capacity" class="form-control">
-                    <c:forEach var="i" begin="1" end="20">
-                        <option value="${i}">${i}</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <label>顾客数
-                <select name="guestNumber" id="table_update_guest_number" class="form-control">
-                    <c:forEach var="i" begin="0" end="20">
-                        <option value="${i}">${i}</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <label>服务码
-                <input type="text" id="table_update_service_code" class="form-control" name="serviceCode" placeholder="请输入服务码"  >
-            </label>
-            <label>状态
-                <select name="status" id="table_update_status" class="form-control">
-                    <option value="有客">有客</option>
-                    <option value="空闲">空闲</option>
-                </select>
-            </label>
-            <button type="submit" class="btn btn-default">更新</button>
-            <button type="button" id="table_update_form_close_btn" class="btn btn-default">关闭</button>
-        </div>
-    </form>
+        <form id="table_reg_form" role="form" method="post" action="/table/add">
+            <div class="form-group form-inline">
+                <label>餐桌组ID
+                    <select name="tgId" class="form-control">
+                        <c:forEach var="tableGroup" items="${tableGroupList}">
+                            <option value="${tableGroup.tgId}">${tableGroup.name}(${tableGroup.tgId})</option>
+                        </c:forEach>
+                    </select>
+                </label>
+                <label>餐桌名称
+                    <input type="text" class="form-control" name="name" placeholder="请输入餐桌名称" value="餐桌${tableCount+1}" >
+                </label>
+                <label>描述
+                    <input type="text" class="form-control" name="description" placeholder="请输入餐桌描述"  >
+                </label>
+                <label>容量
+                    <select name="capacity" class="form-control">
+                        <c:forEach var="i" begin="1" end="20">
+                            <option value="${i}">${i}</option>
+                        </c:forEach>
+                    </select>
+                </label>
+                <button type="submit" class="btn btn-default">新建</button>
+                <button type="button" id="table_reg_form_close_btn" class="btn btn-default">关闭</button>
+            </div>
+        </form>
+
+        <form id="table_update_form" role="form" method="post">
+            <div class="form-group form-inline">
+                <label>餐桌ID
+                    <input type="text" id="table_update_t_id" class="form-control" name="tId" disabled="disabled">
+                </label>
+                <label>餐桌组ID
+                    <select name="tgId" id="table_update_tg_id" class="form-control">
+                        <c:forEach var="tableGroup" items="${tableGroupList}">
+                            <option value="${tableGroup.tgId}">${tableGroup.name}(${tableGroup.tgId})</option>
+                        </c:forEach>
+                    </select>
+                </label>
+                <label>餐桌名称
+                    <input type="text" id="table_update_name" class="form-control" name="name" placeholder="请输入餐桌名称"  >
+                </label>
+                <label>描述
+                    <input type="text" id="table_update_desc" class="form-control" name="description" placeholder="请输入餐桌描述"  >
+                </label>
+                <label>容量
+                    <select name="capacity" id="table_update_capacity" class="form-control">
+                        <c:forEach var="i" begin="1" end="20">
+                            <option value="${i}">${i}</option>
+                        </c:forEach>
+                    </select>
+                </label>
+                <label>顾客数
+                    <select name="guestNumber" id="table_update_guest_number" class="form-control">
+                        <c:forEach var="i" begin="0" end="20">
+                            <option value="${i}">${i}</option>
+                        </c:forEach>
+                    </select>
+                </label>
+                <label>服务码
+                    <input type="text" id="table_update_service_code" class="form-control" name="serviceCode" placeholder="请输入服务码"  >
+                </label>
+                <label>状态
+                    <select name="status" id="table_update_status" class="form-control">
+                        <option value="有客">有客</option>
+                        <option value="空闲">空闲</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn btn-default">更新</button>
+                <button type="button" id="table_update_form_close_btn" class="btn btn-default">关闭</button>
+            </div>
+        </form>
+
+    </c:if>
 
     <form id="guest_update_form" role="form" method="post">
         <div class="form-group form-inline">
@@ -136,25 +138,20 @@
             <label>服务码
                 <input type="text" id="guest_update_service_code" class="form-control" name="serviceCode" placeholder="请输入服务码"  >
             </label>
-            <label>状态
-                <select name="status" id="guest_update_status" class="form-control">
-                    <option value="空闲">空闲</option>
-                    <option value="有客">有客</option>
-                </select>
-            </label>
             <button type="submit" class="btn btn-default">更新</button>
             <button type="button" id="guest_update_form_close_btn" class="btn btn-default">关闭</button>
         </div>
     </form>
 
-
     <c:forEach var="tableGroup" items="${tableGroupList}">
 
         <table class="table">
             <caption>餐桌组ID:${tableGroup.tgId} &nbsp;&nbsp; 餐桌组名:${tableGroup.name}&nbsp;&nbsp;
-                <a class="btn btn-default" href="/table/group/${tableGroup.tgId}/delete">删除</a>
-                <button class="btn btn-default table_group_update_form_open_btn" tgId="${tableGroup.tgId}" tgName="${tableGroup.name}">更新</button>
-            </caption>
+                <c:if test="${role=='admin'}">
+                    <a class="btn btn-default" href="/table/group/${tableGroup.tgId}/delete">删除</a>
+                    <button class="btn btn-default table_group_update_form_open_btn" tgId="${tableGroup.tgId}" tgName="${tableGroup.name}">更新</button>
+                </c:if>
+                </caption>
             <thead>
                 <tr>
                     <th>餐桌ID</th>
@@ -178,10 +175,12 @@
                         <td>${table.serviceCode}</td>
                         <td>${table.status}</td>
                         <td>
-                            <a class="btn btn-default" href="/table/${table.tId}/delete">删除</a>
-                            <button class="btn btn-default table_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
-                                    name="${table.name}" desc="${table.description}" capacity="${table.capacity}"
-                                    guestnumber="${table.guestNumber}" servicecode="${table.serviceCode}" status="${table.status}">更新</button>
+                            <c:if test="${role=='admin'}">
+                                <a class="btn btn-default" href="/table/${table.tId}/delete">删除</a>
+                                <button class="btn btn-default table_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
+                                        name="${table.name}" desc="${table.description}" capacity="${table.capacity}"
+                                        guestnumber="${table.guestNumber}" servicecode="${table.serviceCode}" status="${table.status}">更新</button>
+                            </c:if>
                             <button class="btn btn-default guest_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
                                     name="${table.name}" capacity="${table.capacity}"
                                     guestnumber="${table.guestNumber}" servicecode="${table.serviceCode}" status="${table.status}">更新顾客</button>
@@ -194,10 +193,13 @@
 </div>
 
 </body>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+<%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+
+<%@include file="common/foot.jsp"%>
 
 <script type="text/javascript">
     $(function () {

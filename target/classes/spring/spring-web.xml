@@ -29,8 +29,22 @@
     <!--配置拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/restaurant/admin"/>
+            <mvc:mapping path="/restaurant/*/admin/**"/>
             <bean class="com.restaurant.interceptor.AdminInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/kitchen/**"/>
+            <bean class="com.restaurant.interceptor.KitchenInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/cashier/**"/>
+            <bean class="com.restaurant.interceptor.CashierInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 
