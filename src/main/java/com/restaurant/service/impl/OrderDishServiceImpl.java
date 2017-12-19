@@ -2,14 +2,13 @@ package com.restaurant.service.impl;
 
 import com.restaurant.dao.DishDao;
 import com.restaurant.dao.OrderDishDao;
+import com.restaurant.dao.OrderFormDao;
 import com.restaurant.dto.OrderFormItem;
 import com.restaurant.entity.Dish;
 import com.restaurant.entity.OrderDish;
 import com.restaurant.entity.OrderDishKey;
-import com.restaurant.enums.DeleteStateEnum;
-import com.restaurant.enums.OrderDishStateEnum;
-import com.restaurant.enums.RegisterStateEnum;
-import com.restaurant.enums.UpdateStateEnum;
+import com.restaurant.entity.OrderForm;
+import com.restaurant.enums.*;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -28,16 +27,6 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
     @Override
     public int insert(OrderDish record) {
         return orderDishDao.insert(record);
-    }
-
-    @Override
-    public List<OrderDish> selectByOId(int oId) {
-        return orderDishDao.selectByOId(oId);
-    }
-
-    @Override
-    public List<OrderDish> selectNotEndByOId(int oId) {
-        return orderDishDao.selectNotEndByOId(oId);
     }
 
     @Override
@@ -63,6 +52,11 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
             return RegisterStateEnum.FAILED;
         }
 
+        Dish dish = dishDao.selectById(orderDish.getdId());
+        if(dish==null||dish.getStatus().equals(MenuItemStateEnum.SOLD_OUT.getStateInfo())){
+            return RegisterStateEnum.FAILED;
+        }
+
         orderDish.setServeNumber(0);
         orderDish.setOrderTime(new Date());
         orderDish.setStatus(OrderDishStateEnum.WAITING.getStateInfo());
@@ -76,12 +70,14 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
     }
 
     @Override
-    public DeleteStateEnum deleteByPrimaryKey(int oId, int dId) {
+    public DeleteStateEnum delete(int oId, int dId) {
         OrderDishKey key=new OrderDishKey(oId,dId);
         OrderDish orderDish=orderDishDao.selectByPrimaryKey(key);
-        if(orderDish==null|| !orderDish.getStatus().equals(OrderDishStateEnum.WAITING.getStateInfo())){
+        if(orderDish==null|| !orderDish.getStatus().equals(OrderDishStateEnum.WAITING.getStateInfo())
+                ||orderDish.getServeNumber()!=0){
             return DeleteStateEnum.FAILED;
         }
+
         int deleteCount=orderDishDao.deleteByPrimaryKey(key);
         if(deleteCount==1){
             return DeleteStateEnum.SUCCESS;
@@ -95,17 +91,39 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
         OrderDishKey key=new OrderDishKey(orderDish.getoId(),orderDish.getdId());
         OrderDish orderDishFromDB=orderDishDao.selectByPrimaryKey(key);
 
-        if(orderDish.getOrderNumber() < orderDishFromDB.getServeNumber()){
-            return UpdateStateEnum.FAILED;
-        }
-        if(orderDish.getOrderNumber() == orderDishFromDB.getServeNumber()
-                && orderDishFromDB.getStatus().equals(OrderDishStateEnum.COOKING.getStateInfo())){
-            return UpdateStateEnum.FAILED;
-        }
+        int orderNumber=orderDish.getOrderNumber();
+        int orderNumberFromDB=orderDishFromDB.getOrderNumber();
+        int serveNumberFromDB=orderDishFromDB.getServeNumber();
 
-        if(orderDish.getOrderNumber() == orderDishFromDB.getServeNumber()
-                && orderDishFromDB.getStatus().equals(OrderDishStateEnum.WAITING.getStateInfo())){
-            orderDish.setStatus(OrderDishStateEnum.END.getStateInfo());
+        //如果修改了点菜数量
+        if(orderNumber!=orderNumberFromDB){
+            //如果修改后的数量小于已经上菜的数量，则失败
+            if(orderNumber < serveNumberFromDB){
+                return UpdateStateEnum.FAILED;
+            }
+            //如果修改后的数量大于已经上菜的数量，即顾客添加点菜数量
+            else if(orderNumber > serveNumberFromDB) {
+                //将“已上菜”状态修改为“排队中”。“正在烹饪”不修改
+                if (orderDishFromDB.getStatus().equals(OrderDishStateEnum.END.getStateInfo())) {
+                    orderDish.setStatus(OrderDishStateEnum.WAITING.getStateInfo());
+                }
+            }
+            //如果修改后的数量等于已经上菜的数量
+            else {
+                //但是状态为“正在烹饪”，说明后厨还在煮该菜，修改会失败
+                if(orderDishFromDB.getStatus().equals(OrderDishStateEnum.COOKING.getStateInfo())){
+                    return UpdateStateEnum.FAILED;
+                }
+                //将状态修改为已上菜
+                orderDish.setStatus(OrderDishStateEnum.END.getStateInfo());
+            }
+        }
+        //这是没有修改点单数量，但是修改了备注的情况。如果菜已经上了，或者正在烹饪，这时候的备注无法被后厨看到
+        //为了避免不必要的麻烦，需要拒绝这种更新请求
+        else {
+            if(!orderDishFromDB.getStatus().equals(OrderDishStateEnum.WAITING.getStateInfo())){
+                return UpdateStateEnum.FAILED;
+            }
         }
 
         int updateCount = orderDishDao.updateByPrimaryKeySelective(orderDish);

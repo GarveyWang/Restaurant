@@ -18,7 +18,7 @@
                 <input type="text" id="d_id" class="form-control" name="dId" disabled="disabled">
             </label>
             <label>备注
-                <input type="text" id="remark" class="form-control" name="remark" placeholder="请输入菜品组名称" >
+                <input type="text" id="remark" class="form-control" name="remark" placeholder="请输入备注" >
             </label>
             <label>已点数量
                 <select id="order_number" class="form-control" name="orderNumber">
@@ -34,7 +34,7 @@
 
     <div>
         <table class="table">
-            <caption>订单号：${oId}</caption>
+            <caption>订单号：${oId} &nbsp; &nbsp; 总价： ${totalPrice}</caption>
             <thead>
             <tr>
                 <th>菜品ID</th>
@@ -127,10 +127,13 @@
 </div>
 
 </body>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+<%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+
+<%@include file="common/foot.jsp"%>
 
 <script type="text/javascript">
     $(function () {

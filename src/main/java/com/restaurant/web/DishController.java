@@ -39,7 +39,7 @@ public class DishController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
+        return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
     @RequestMapping(value = "/add",method = RequestMethod.POST)
@@ -51,7 +51,7 @@ public class DishController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
+        return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
     @RequestMapping(value = "/group/{dgId}/delete",method = RequestMethod.GET)
@@ -68,7 +68,7 @@ public class DishController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
+        return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
     @RequestMapping(value = "/{dId}/delete",method = RequestMethod.GET)
@@ -85,7 +85,7 @@ public class DishController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
+        return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
     @RequestMapping(value = "/group/{dgId}/update",method = RequestMethod.POST)
@@ -103,7 +103,7 @@ public class DishController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
-        return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
+        return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
     @RequestMapping(value = "/{dId}/update",method = RequestMethod.POST)
@@ -122,109 +122,5 @@ public class DishController {
 
         return "redirect:/restaurant/" +sessionRId+ "/dishgroup";
     }
-
-
-
-//    @RequestMapping(value = "/add",method = RequestMethod.POST)
-//    public String addTable(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//        table.setGuestNumber(0);
-//        table.setServiceCode("0");
-//        table.setStatus(TableStateEnum.FREE.getStateInfo());
-//
-//        RegisterStateEnum registerState=tableService.register(table);
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",registerState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
-//
-//    @RequestMapping(value = "/{tId}/delete",method = RequestMethod.GET)
-//    public String deleteTable(@PathVariable("tId") int tId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//
-//        DeleteStateEnum deleteState=null;
-//        if(sessionRId!=tableService.getRIdByTId(tId)){
-//            deleteState=DeleteStateEnum.FAILED;
-//        }else {
-//            deleteState=tableService.deleteById(tId);
-//        }
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
-//
-//    @RequestMapping(value = "/group/{tgId}/delete",method = RequestMethod.GET)
-//    public String deleteTableGroup(@PathVariable("tgId") int tgId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//
-//        DeleteStateEnum deleteState=null;
-//        if(sessionRId!=tableGroupService.getRIdByTgId(tgId)){
-//            deleteState=DeleteStateEnum.FAILED;
-//        }else {
-//            tableGroupService.deleteByTgId(tgId);
-//            deleteState=DeleteStateEnum.SUCCESS;
-//        }
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
-//
-//    @RequestMapping(value = "/group/{tgId}/update",method = RequestMethod.POST)
-//    public String updateTableGroup(TableGroup tableGroup, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//
-//        UpdateStateEnum updateState=null;
-//        if(sessionRId!=tableGroupService.getRIdByTgId(tableGroup.getTgId())){
-//            updateState=UpdateStateEnum.FAILED;
-//        }else {
-//            tableGroup.setrId(sessionRId);
-//            updateState=tableGroupService.update(tableGroup);
-//        }
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
-//
-//    @RequestMapping(value = "/{tId}/update",method = RequestMethod.POST)
-//    public String updateTable(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//
-//        UpdateStateEnum updateState=null;
-//        if(sessionRId!=tableService.getRIdByTId(table.gettId())){
-//            updateState=UpdateStateEnum.FAILED;
-//        }else {
-//            updateState=tableService.updateSelective(table);
-//        }
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
-//
-//    @RequestMapping(value = "/{tId}/guest/update",method = RequestMethod.POST)
-//    public String updateGuestInfo(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-//        HttpSession session=request.getSession();
-//        int sessionRId=(int)session.getAttribute("rId");
-//
-//        UpdateStateEnum updateState=null;
-//        if(sessionRId!=tableService.getRIdByTId(table.gettId())){
-//            updateState=UpdateStateEnum.FAILED;
-//        }else {
-//            updateState=tableService.updateGuestInfo(table);
-//        }
-//        attributes.addFlashAttribute("rId",sessionRId);
-//        modelMap.addFlashAttribute("msg",updateState.getStateInfo());
-//
-//        return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
-//    }
 
 }

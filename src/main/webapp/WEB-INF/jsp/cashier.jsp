@@ -31,7 +31,7 @@
                     <td>${item.totalPrice}</td>
                     <td>${item.discount}</td>
                     <td>
-                        <button class="btn btn-default end_btn" oid="${item.oId}">
+                        <button class="btn btn-default end_btn" oid="${item.oId}" tid="${item.tId}">
                             结束
                         </button>
                     </td>
@@ -44,26 +44,33 @@
 
 
 </body>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+
+<%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+
+<%@include file="common/foot.jsp"%>
 
 <script type="text/javascript">
     $(function () {
         $('.end_btn').click(function () {
             var oid=$(this).attr('oid');
+            var tid=$(this).attr('tid');
             var action='/cashier/'+ oid +'/end';
             var form = $('<form></form>');
+
 
             form.attr('action', action);
             form.attr('method', 'post');
             form.attr('target', '_self');
 
             var oIdInput = $('<input type="text" name="oId" />');
+            var tIdInput = $('<input type="text" name="tId" />')
             oIdInput.attr('value',oid);
-
+            tIdInput.attr('value',tid);
             form.append(oIdInput);
+            form.append(tIdInput);
 
             form.appendTo("body").submit();
             form.remove();

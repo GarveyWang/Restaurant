@@ -76,8 +76,10 @@ public class CustomerController {
         if(currentOrderForm==null){
             orderFormService.register(sessionRId,sessionTId);
             currentOrderForm=orderFormService.selectNotEndByTId(sessionTId);
+
         }
 
+        int totalPrice = orderFormService.getTotalPrice(currentOrderForm.getoId());
         int oId=currentOrderForm.getoId();
         List<OrderFormItem> orderFormItemList=orderDishService.selectOrderFormItemByOId(oId);
 
@@ -86,6 +88,7 @@ public class CustomerController {
         model.addAttribute("orderFormItemList",orderFormItemList);
         model.addAttribute("oId",oId);
         model.addAttribute("tId",sessionTId);
+        model.addAttribute("totalPrice",totalPrice);
         return "menu";
     }
 
@@ -98,6 +101,7 @@ public class CustomerController {
         orderDish.setoId(sessionOId);
 
         RegisterStateEnum registerStateEnum=orderDishService.register(orderDish);
+        orderFormService.countTotalPrice(sessionOId);
 
         int sessionTId=(int)session.getAttribute("tId");
         attributes.addFlashAttribute("tId",sessionTId);
@@ -112,7 +116,8 @@ public class CustomerController {
         int sessionTId=(int)session.getAttribute("tId");
         int sessionOId=(int)session.getAttribute("oId");
 
-        DeleteStateEnum deleteState=orderDishService.deleteByPrimaryKey(sessionOId,dId);
+        DeleteStateEnum deleteState=orderDishService.delete(sessionOId,dId);
+        orderFormService.countTotalPrice(sessionOId);
 
         attributes.addFlashAttribute("tId",sessionTId);
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
@@ -129,6 +134,7 @@ public class CustomerController {
         orderDish.setoId(sessionOId);
 
         UpdateStateEnum registerStateEnum=orderDishService.update(orderDish);
+        orderFormService.countTotalPrice(sessionOId);
 
         int sessionTId=(int)session.getAttribute("tId");
         attributes.addFlashAttribute("tId",sessionTId);

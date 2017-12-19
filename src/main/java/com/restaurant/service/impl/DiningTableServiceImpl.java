@@ -4,10 +4,7 @@ import com.restaurant.dao.DiningTableDao;
 import com.restaurant.dao.TableGroupDao;
 import com.restaurant.entity.DiningTable;
 import com.restaurant.entity.TableGroup;
-import com.restaurant.enums.DeleteStateEnum;
-import com.restaurant.enums.LoginStateEnum;
-import com.restaurant.enums.RegisterStateEnum;
-import com.restaurant.enums.UpdateStateEnum;
+import com.restaurant.enums.*;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -117,6 +114,14 @@ public class DiningTableServiceImpl implements com.restaurant.service.DiningTabl
         if(table==null || table.getServiceCode()==null || "".equals(table.getServiceCode().trim())){
             return UpdateStateEnum.FAILED;
         }
+
+        if(table.getGuestNumber()==0){
+            table.setStatus(TableStateEnum.FREE.getStateInfo());
+        }else {
+            table.setStatus(TableStateEnum.BUSY.getStateInfo());
+        }
+
+
         int updateCount=diningTableDao.updateByPrimaryKeySelective(table);
         if(updateCount==1){
             return UpdateStateEnum.SUCCESS;
