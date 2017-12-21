@@ -36,12 +36,15 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
         for(OrderDish orderDish:orderDishList){
             int d_id=orderDish.getdId();
             Dish dish=dishDao.selectById(d_id);
-            String dishName=dish.getName();
-            int price=dish.getPrice();
-            OrderFormItem orderFormItem=new OrderFormItem(d_id,orderDish.getOrderNumber(),orderDish.getServeNumber(),orderDish.getRemark(),orderDish.getStatus(),orderDish.getOrderTime());
-            orderFormItem.setName(dishName);
-            orderFormItem.setPrice(price);
-            orderFormItemList.add(orderFormItem);
+            if(dish!=null){
+                String dishName=dish.getName();
+                int price=dish.getPrice();
+                OrderFormItem orderFormItem=new OrderFormItem(d_id,orderDish.getOrderNumber(),orderDish.getServeNumber(),
+                        orderDish.getRemark(),orderDish.getStatus(),orderDish.getOrderTime(),orderDish.getScore());
+                orderFormItem.setName(dishName);
+                orderFormItem.setPrice(price);
+                orderFormItemList.add(orderFormItem);
+            }
         }
         return orderFormItemList;
     }
@@ -59,6 +62,7 @@ public class OrderDishServiceImpl implements com.restaurant.service.OrderDishSer
 
         orderDish.setServeNumber(0);
         orderDish.setOrderTime(new Date());
+        orderDish.setScore(5);
         orderDish.setStatus(OrderDishStateEnum.WAITING.getStateInfo());
 
         int insertCount = orderDishDao.insert(orderDish);

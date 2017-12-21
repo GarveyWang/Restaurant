@@ -76,7 +76,6 @@ public class CustomerController {
         if(currentOrderForm==null){
             orderFormService.register(sessionRId,sessionTId);
             currentOrderForm=orderFormService.selectNotEndByTId(sessionTId);
-
         }
 
         int totalPrice = orderFormService.getTotalPrice(currentOrderForm.getoId());
@@ -142,4 +141,7 @@ public class CustomerController {
         modelMap.addFlashAttribute("msg",registerStateEnum.getStateInfo());
         return "redirect:/customer/"+sessionTId+"/menu";
     }
+
+
+
 }

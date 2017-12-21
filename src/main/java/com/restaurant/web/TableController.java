@@ -1,10 +1,7 @@
 package com.restaurant.web;
 
 import com.restaurant.entity.*;
-import com.restaurant.enums.DeleteStateEnum;
-import com.restaurant.enums.RegisterStateEnum;
-import com.restaurant.enums.TableStateEnum;
-import com.restaurant.enums.UpdateStateEnum;
+import com.restaurant.enums.*;
 import com.restaurant.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -142,6 +139,10 @@ public class TableController {
         attributes.addFlashAttribute("rId",sessionRId);
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
 
+        int roleCode=(int)session.getAttribute("roleCode");
+        if(roleCode== RoleEnum.ADMIN.getRoleCode()){
+            return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
+        }
         return "redirect:/restaurant/" +sessionRId+ "/tablegroup";
     }
 }

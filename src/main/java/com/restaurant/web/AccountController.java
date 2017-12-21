@@ -159,7 +159,7 @@ public class AccountController {
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
 
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
     @RequestMapping(value = "/kitchen/add",
@@ -174,7 +174,7 @@ public class AccountController {
         modelMap.addFlashAttribute("msg",registerState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
 
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
 
@@ -194,7 +194,7 @@ public class AccountController {
 
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
     @RequestMapping(value = "/kitchen/{kId}/delete",
@@ -213,7 +213,7 @@ public class AccountController {
 
         modelMap.addFlashAttribute("msg",deleteState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
 
@@ -234,7 +234,7 @@ public class AccountController {
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
     @RequestMapping(value = "/kitchen/{kId}/update",
@@ -254,7 +254,7 @@ public class AccountController {
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
 
@@ -276,6 +276,6 @@ public class AccountController {
 
         modelMap.addFlashAttribute("msg",updateState.getStateInfo());
         attributes.addFlashAttribute("rId",sessionRId);
-        return "redirect:/restaurant/"+sessionRId+"/employee";
+        return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 }

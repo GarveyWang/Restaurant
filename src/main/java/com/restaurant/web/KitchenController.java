@@ -70,6 +70,7 @@ public class KitchenController {
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<DishGroup>dishGroupList=dishGroupService.selectByRId(sessionRId);
 
+
         int dishCount=dishGroupService.getDishCount(dishGroupList);
         model.addAttribute("dishGroupList",dishGroupList);
         model.addAttribute("dishCount",dishCount);

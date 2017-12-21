@@ -10,10 +10,11 @@
     <result column="remark" jdbcType="VARCHAR" property="remark" />
     <result column="status" jdbcType="VARCHAR" property="status" />
     <result column="order_time" jdbcType="TIMESTAMP" property="orderTime" />
+    <result column="score" jdbcType="INTEGER" property="score" />
   </resultMap>
 
   <sql id="Order_Dish_Column_List">
-    o_id, d_id, order_number, serve_number, remark, status, order_time
+    o_id, d_id, order_number, serve_number, remark, status, order_time, score
   </sql>
 
   <select id="selectByPrimaryKey" parameterType="com.restaurant.entity.OrderDishKey" resultMap="OrderDishResultMap">
@@ -46,9 +47,9 @@
 
   <insert id="insert" parameterType="com.restaurant.entity.OrderDish">
     insert ignore into order_dish (o_id, d_id, order_number, serve_number, remark,
-      status, order_time)
+      status, order_time, score)
     values (#{oId,jdbcType=INTEGER}, #{dId,jdbcType=INTEGER}, #{orderNumber,jdbcType=INTEGER}, #{serveNumber,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR},
-      #{status,jdbcType=VARCHAR}, #{orderTime,jdbcType=TIMESTAMP})
+      #{status,jdbcType=VARCHAR}, #{orderTime,jdbcType=TIMESTAMP}, #{score,jdbcType=INTEGER})
   </insert>
 
   <insert id="insertSelective" parameterType="com.restaurant.entity.OrderDish">
@@ -75,6 +76,9 @@
       <if test="order_time != null">
         order_time,
       </if>
+      <if test="score != null">
+        score,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="oId != null">
@@ -98,6 +102,9 @@
       <if test="orderTime != null">
         #{orderTime,jdbcType=VARCHAR},
       </if>
+      <if test="score != null">
+        #{score,jdbcType=INTEGER},
+      </if>
     </trim>
   </insert>
 
@@ -119,6 +126,9 @@
       <if test="orderTime != null">
         orderTime = #{orderTime,jdbcType=VARCHAR},
       </if>
+      <if test="score != null">
+        score = #{score,jdbcType=INTEGER},
+      </if>
     </set>
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
@@ -130,7 +140,8 @@
       serve_number = #{serveNumber, jdbcType=INTEGER},
       remark = #{remark,jdbcType=VARCHAR},
       status = #{status,jdbcType=VARCHAR},
-      order_time = #{orderTime, jdbcType=TIMESTAMP}
+      order_time = #{orderTime, jdbcType=TIMESTAMP},
+      score = #{score, jdbcType=INTEGER}
     where o_id = #{oId,jdbcType=INTEGER}
       and d_id = #{dId,jdbcType=INTEGER}
   </update>

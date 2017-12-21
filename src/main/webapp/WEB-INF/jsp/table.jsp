@@ -210,6 +210,7 @@
         $('#guest_update_form').hide();
 
 
+        //餐桌组注册
         $('#table_group_reg_form_open_btn').click(function () {
             $('#table_group_reg_form').show();
         })
@@ -218,14 +219,7 @@
             $('#table_group_reg_form').hide();
         })
 
-        $('#table_reg_form_open_btn').click(function () {
-            $("#table_reg_form").show();
-        })
-
-        $('#table_reg_form_close_btn').click(function () {
-            $('#table_reg_form').hide();
-        })
-
+        //餐桌组更新
         $('.table_group_update_form_open_btn').click(function () {
             $('#table_group_update_form').show();
             $('#tg_id').val($(this).attr('tgid'));
@@ -239,6 +233,17 @@
             $('#table_group_update_form').hide();
         })
 
+        //餐桌注册
+        $('#table_reg_form_open_btn').click(function () {
+            $("#table_reg_form").show();
+        })
+
+        $('#table_reg_form_close_btn').click(function () {
+            $('#table_reg_form').hide();
+        })
+
+
+        //餐桌更新
         $('.table_update_form_open_btn').click(function () {
             $('#table_update_form').show();
             $('#table_update_t_id').val($(this).attr('tid'));
@@ -257,6 +262,9 @@
         $('#table_update_form_close_btn').click(function () {
             $('#table_update_form').hide();
         })
+
+
+        //顾客更新
 
         $('#guest_update_form_close_btn').click(function () {
             $('#guest_update_form').hide();

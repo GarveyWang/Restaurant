@@ -90,10 +90,12 @@ public class KitchenServiceImpl implements com.restaurant.service.KitchenService
                 int dId=orderDish.getdId();
                 KitchenTaskItem item=new KitchenTaskItem(orderDish.getoId(),dId,orderDish.getOrderNumber(),orderDish.getServeNumber(),orderDish.getRemark(),orderDish.getOrderTime(),orderDish.getStatus());
                 Dish dish=dishDao.selectById(dId);
-                item.setDishName(dish.getName());
-                item.setTableName(tableName);
-                item.setTableGroupName(tableGroupName);
-                kitchenTaskItemList.add(item);
+                if(dish!=null){
+                    item.setDishName(dish.getName());
+                    item.setTableName(tableName);
+                    item.setTableGroupName(tableGroupName);
+                    kitchenTaskItemList.add(item);
+                }
             }
         }
         return kitchenTaskItemList;

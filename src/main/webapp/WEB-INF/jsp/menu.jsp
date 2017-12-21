@@ -27,10 +27,18 @@
                     </c:forEach>
                 </select>
             </label>
+            <label>评分
+                <select id="score" class="form-control" name="score">
+                    <c:forEach var="i" begin="1" end="5">
+                        <option value="${i}">${i}</option>
+                    </c:forEach>
+                </select>
+            </label>
             <button type="submit" class="btn btn-default">更新</button>
             <button type="button" id="order_dish_update_form_close_btn" class="btn btn-default">关闭</button>
         </div>
     </form>
+
 
     <div>
         <table class="table">
@@ -63,7 +71,7 @@
                         <a href="/customer/orderdish/${item.dId}/delete" class="btn btn-default">删除</a>
                         <button class="btn btn-default order_dish_update_form_open_btn"
                                 did="${item.dId}" remark="${item.remark}" ordernumber="${item.orderNumber}"
-                                servenumber="${item.serveNumber}" dname="${item.name}">
+                                servenumber="${item.serveNumber}" dname="${item.name}" score="${item.score}">
                             修改
                         </button>
                     </td>
@@ -147,6 +155,7 @@
             $('#remark').val($(this).attr("remark"));
             $('#d_id').val($(this).attr("did"));
             $('#d_name').val($(this).attr("dname"));
+            $('#score').val($(this).attr("score"));
 
             var action = "/customer/orderdish/"+$(this).attr("did")+"/update";
             $('#order_dish_update_form').attr("action",action);
