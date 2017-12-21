@@ -13,6 +13,8 @@ public class OrderDish extends OrderDishKey {
 
     private Date orderTime;
 
+    private int score;
+
     public String getRemark() {
         return remark;
     }
@@ -51,5 +53,13 @@ public class OrderDish extends OrderDishKey {
 
     public void setOrderTime(Date orderTime) {
         this.orderTime = orderTime;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }

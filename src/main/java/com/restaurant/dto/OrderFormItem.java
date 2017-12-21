@@ -11,17 +11,19 @@ public class OrderFormItem {
     private String remark;
     private String state;
     private Date orderTime;
+    private int score;
 
     public OrderFormItem() {
     }
 
-    public OrderFormItem(int dId, int orderNumber, int serveNumber, String remark, String state, Date orderTime) {
+    public OrderFormItem(int dId, int orderNumber, int serveNumber, String remark, String state, Date orderTime, int score) {
         this.dId = dId;
         this.orderNumber = orderNumber;
         this.serveNumber = serveNumber;
         this.remark = remark;
         this.state = state;
-        this.orderTime=orderTime;
+        this.orderTime = orderTime;
+        this.score = score;
     }
 
     public int getdId() {
@@ -86,5 +88,13 @@ public class OrderFormItem {
 
     public void setOrderTime(Date orderTime) {
         this.orderTime = orderTime;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }
