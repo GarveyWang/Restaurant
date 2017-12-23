@@ -19,7 +19,7 @@
 
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
-<body background="resources/images/1.jpg">
+<body>
     <div class="top-content">
         <div class="inner-bg">
             <div class="container ">
@@ -131,6 +131,14 @@
     </div>
 
 </body>
+<script>
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/1.jpg)";
+    $(function () {
+        <c:if test="${msg!=null}">
+        alert("${msg}");
+        </c:if>
+    })
+</script>
 
 <%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>

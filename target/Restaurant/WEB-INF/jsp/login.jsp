@@ -17,7 +17,7 @@
 
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
-<body background="${pageContext.request.contextPath}/resources/images/1.jpg">
+<body>
 <div class="top-content">
     <div class="inner-bg">
         <div class="container ">
@@ -136,5 +136,12 @@
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
 
 <%@include file="common/foot.jsp"%>
-
+<script>
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/1.jpg)";
+    $(function () {
+        <c:if test="${msg!=null}">
+        alert("${msg}");
+        </c:if>
+    })
+</script>
 </html>

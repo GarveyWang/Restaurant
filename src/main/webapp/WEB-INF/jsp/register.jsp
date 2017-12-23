@@ -3,6 +3,7 @@
 <head>
     <title>餐馆注册页面</title>
     <%@include file="common/head.jsp"%>
+
 </head>
 <body background="${pageContext.request.contextPath}/resources/images/3.jpg">
     <div class="container">

@@ -3,6 +3,7 @@
 <head>
     <title>餐馆注册页面</title>
     <%@include file="common/head.jsp"%>
+
 </head>
 <body background="${pageContext.request.contextPath}/resources/images/3.jpg">
     <div class="container">
@@ -44,7 +45,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-success">提交</button>
                                 </form>
-                                <p style="color: red">
+                                <p class="warning-info">
                                     ${msg}
                                 </p>
                             </div>
