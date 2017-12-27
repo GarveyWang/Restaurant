@@ -1,5 +1,4 @@
 <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"><\/script>')</script>
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
 <%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->

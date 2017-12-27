@@ -219,6 +219,7 @@
 <%@include file="common/foot.jsp"%>
 
 <script type="text/javascript">
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/3.jpg)";
     $(function () {
 
         $('.dish_group_update_form_open_btn').click(function () {

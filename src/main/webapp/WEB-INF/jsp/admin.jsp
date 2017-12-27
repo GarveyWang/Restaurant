@@ -53,6 +53,7 @@
 <script>window.jQuery || document.write('<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"><\/script>')</script>
 <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 <script type="text/javascript">
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/3.jpg)";
     $(document).ready(function () {
         var trigger = $('.hamburger'),
             overlay = $('.overlay'),

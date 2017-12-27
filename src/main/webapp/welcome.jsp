@@ -19,7 +19,7 @@
 
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
-<body background="${pageContext.request.contextPath}/resources/images/2.jpg">
+<body background="${pageContext.request.contextPath}/resources/images/userInterface.jpg">
 <div class="top-content">
     <div class="inner-bg">
         <div class="container">

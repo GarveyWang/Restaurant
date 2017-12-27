@@ -78,8 +78,10 @@
 </div>
 </body>
 <script type="text/javascript">
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/3.jpg)";
    $(function () {
         $('.cook_btn').click(function () {
+            alert(2);
             var oid=$(this).attr('oid');
             var did=$(this).attr('did');
             var action='/kitchen/'+ oid + '/' + did + '/cook';
