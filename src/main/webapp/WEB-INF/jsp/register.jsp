@@ -3,7 +3,8 @@
 <head>
     <title>餐馆注册页面</title>
     <%@include file="common/head.jsp"%>
-
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/font-awesome/css/font-awesome.min.css">
 </head>
 <body background="${pageContext.request.contextPath}/resources/images/3.jpg">
     <div class="container">

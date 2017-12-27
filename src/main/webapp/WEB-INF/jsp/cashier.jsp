@@ -3,46 +3,56 @@
 <head>
     <title>收银台</title>
     <%@include file="common/head.jsp"%>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/leafDemo.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/managerStyle.css">
 </head>
 <body>
-
-<div class="container">
-    <div>
-        ${msg}
-    </div>
-    收银台
-    <div>
-        <table class="table">
-            <caption>未结束订单</caption>
-            <thead>
-            <tr>
-                <th>订单ID</th>
-                <th>餐桌号</th>
-                <th>总价</th>
-                <th>折扣</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="item" items="${currentOrderFormList}">
+<div id="wrapper">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#"><i class="fa fa-money"></i>收银台</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+        <div class="container">
+            <table class="table" style="color: white">
+                <caption>未结束订单</caption>
+                <thead>
                 <tr>
-                    <td>${item.oId}</td>
-                    <td>${item.tId}</td>
-                    <td>${item.totalPrice}</td>
-                    <td>${item.discount}</td>
-                    <td>
-                        <button class="btn btn-default end_btn" oid="${item.oId}" tid="${item.tId}">
-                            结束
-                        </button>
-                    </td>
+                    <th>订单ID</th>
+                    <th>餐桌号</th>
+                    <th>总价</th>
+                    <th>折扣</th>
+                    <th>操作</th>
                 </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                <c:forEach var="item" items="${currentOrderFormList}">
+                    <tr>
+                        <td>${item.oId}</td>
+                        <td>${item.tId}</td>
+                        <td>${item.totalPrice}</td>
+                        <td>${item.discount}</td>
+                        <td>
+                            <button class="btn btn-success end_btn" oid="${item.oId}" tid="${item.tId}">
+                                结束
+                            </button>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
-
-
 </body>
 
 <%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -51,7 +61,6 @@
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
 
 <%@include file="common/foot.jsp"%>
-
 <script type="text/javascript">
     $(function () {
         $('.end_btn').click(function () {
@@ -78,5 +87,11 @@
         })
     })
 </script>
-
+<script>
+    $(function () {
+        <c:if test="${msg!=null}">
+        alert("${msg}");
+        </c:if>
+    })
+</script>
 </html>

@@ -31,36 +31,34 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3 form-box">
-                <div class="form-top">
-                    <div class="form-top-left">
-                        <h3>登录</h3>
-                        <p>请输入您的餐桌ID和服务员给您的服务码</p>
-                    </div>
-                    <div class="form-top-right">
-                        <i class="fa fa-key"></i>
-                    </div>
-                </div>
-                <div class="form-bottom">
-                    <form role="form" method="post" action="/customer/login">
-                        <div class="form-group">
-                            <label>餐桌ID</label>
-                            <input type="text" class="form-control" name="tId" placeholder="请输入餐桌ID" value="${tId}">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-3 form-box">
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>登录</h3>
+                            <p>请输入您的餐桌ID和服务员给您的服务码</p>
                         </div>
-                        <div class="form-group">
-                            <label>餐桌服务码</label>
-                            <input type="password" class="form-control" name="serviceCode" placeholder="请输入餐桌服务码" value="${serviceCode}">
+                        <div class="form-top-right">
+                            <i class="fa fa-key"></i>
                         </div>
-                        <button type="submit" class="btn btn-success">进入点单</button>
-                    </form>
+                    </div>
+                    <div class="form-bottom">
+                        <form role="form" method="post" action="/customer/login">
+                            <div class="form-group">
+                                <label>餐桌ID</label>
+                                <input type="text" class="form-control" name="tId" placeholder="请输入餐桌ID" value="${tId}">
+                            </div>
+                            <div class="form-group">
+                                <label>餐桌服务码</label>
+                                <input type="password" class="form-control" name="serviceCode" placeholder="请输入餐桌服务码" value="${serviceCode}">
+                            </div>
+                            <button type="submit" class="btn btn-success">进入点单</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container">
 </div>
 </body>
 

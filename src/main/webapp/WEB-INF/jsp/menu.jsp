@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<div class="container">
+<div class="container" >
     <div>${msg}</div>
 
     <form id="order_dish_update_form" role="form" method="post">
@@ -41,7 +41,7 @@
 
 
     <div>
-        <table class="table">
+        <table class="table" style="color: white">
             <caption>订单号：${oId} &nbsp; &nbsp; 总价： ${totalPrice}</caption>
             <thead>
             <tr>
@@ -190,5 +190,8 @@
             return false;
         })
     })
+</script>
+<script>
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/1.jpg)";
 </script>
 </html>

@@ -119,6 +119,7 @@ img { max-width: 100%; }
     float: left;
     width: 75%;
     padding-top: 25px;
+    text-align: center;
 }
 
 .form-top-left h3 { margin-top: 0; }
@@ -126,7 +127,7 @@ img { max-width: 100%; }
 .form-top-right {
     float: left;
     width: 25%;
-    padding-top: 25px;
+    padding-top: 5px;
     font-size: 66px;
     color: #ddd;
     line-height: 100px;
@@ -164,9 +165,7 @@ img { max-width: 100%; }
     margin-top: 25px;
 }
 
-.warning-info{
-    color: red;
-}
+
 /***** Media queries *****/
 
 @media (min-width: 992px) and (max-width: 1199px) {}
