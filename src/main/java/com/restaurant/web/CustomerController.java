@@ -141,7 +141,12 @@ public class CustomerController {
         modelMap.addFlashAttribute("msg",registerStateEnum.getStateInfo());
         return "redirect:/customer/"+sessionTId+"/menu";
     }
-
-
-
+    @RequestMapping(value="displayDish",method = RequestMethod.GET)
+    public String  displayDish(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+        return "displayDish";
+    }
+    @RequestMapping(value="company",method = RequestMethod.GET)
+    public String company(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+        return "company";
+    }
 }
