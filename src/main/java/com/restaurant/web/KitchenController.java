@@ -30,6 +30,7 @@ public class KitchenController {
     @Autowired
     private DishGroupService dishGroupService;
 
+    //展示厨房任务
     @RequestMapping(value = "/{rId}/task",
             method = RequestMethod.GET)
     public String task(@PathVariable int rId, HttpServletRequest request, Model model){
@@ -39,6 +40,7 @@ public class KitchenController {
         return "kitchen";
     }
 
+    //烹饪某样点单
     @RequestMapping(value = "{oId}/{dId}/cook",
             method = RequestMethod.POST)
     public String cook(OrderDish orderDish, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -52,6 +54,7 @@ public class KitchenController {
         return "redirect:/kitchen/"+sessionrId+"/task";
     }
 
+    //将某样烹饪完的菜品上菜
     @RequestMapping(value = "{oId}/{dId}/serve",
             method = RequestMethod.POST)
     public String serve(OrderDish orderDish, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -65,11 +68,11 @@ public class KitchenController {
         return "redirect:/kitchen/"+sessionrId+"/task";
     }
 
+    //菜品管理页面
     @RequestMapping(value = "/{rId}/dishgroup",method = RequestMethod.GET)
     public String dishGroup(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<DishGroup>dishGroupList=dishGroupService.selectByRId(sessionRId);
-
 
         int dishCount=dishGroupService.getDishCount(dishGroupList);
         model.addAttribute("dishGroupList",dishGroupList);

@@ -3,6 +3,9 @@ package com.restaurant.entity;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 菜品组
+ */
 public class DishGroup {
     private Integer dgId;
 

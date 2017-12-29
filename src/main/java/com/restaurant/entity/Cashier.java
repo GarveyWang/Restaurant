@@ -1,5 +1,8 @@
 package com.restaurant.entity;
 
+/**
+ * 收银台
+ */
 public class Cashier {
     private Integer cId;
 

@@ -2,6 +2,9 @@ package com.restaurant.dto;
 
 import java.util.Date;
 
+/**
+ * 后厨任务项目相关Dto
+ */
 public class KitchenTaskItem {
     private int oId;
     private int dId;

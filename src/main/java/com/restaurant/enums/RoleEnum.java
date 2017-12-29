@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 角色枚举类
+ */
 public enum RoleEnum {
     ADMIN(0,"admin"),
     WAITER(1,"waiter"),

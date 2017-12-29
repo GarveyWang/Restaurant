@@ -8,6 +8,9 @@ import com.restaurant.enums.UpdateStateEnum;
 
 import java.util.List;
 
+/**
+ * 点单服务类
+ */
 public interface OrderDishService {
     int insert(OrderDish record);
 

@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 菜单项状态枚举类
+ */
 public enum MenuItemStateEnum {
     NORMAL_SALE(0,"正常销售"),
     SOLD_OUT(1,"售罄");

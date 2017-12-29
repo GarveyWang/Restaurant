@@ -4,6 +4,9 @@ import com.restaurant.entity.DiningTable;
 
 import java.util.List;
 
+/**
+ * 餐桌相关Dao
+ */
 public interface DiningTableDao {
     /**
      * 通过餐桌Id删除指定餐桌

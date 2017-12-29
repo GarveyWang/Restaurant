@@ -28,12 +28,14 @@ public class RestaurantController {
     private TableGroupService tableGroupService;
 
 
+    //管理员界面
     @RequestMapping(value = "/{rId}/admin",
             method = RequestMethod.GET)
     public String admin(@PathVariable int rId, Model model){
         return "admin";
     }
 
+    //管理员工界面
     @RequestMapping(value = "/{rId}/admin/employee",method = RequestMethod.GET)
     public String employee(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
@@ -50,6 +52,7 @@ public class RestaurantController {
         return "employee";
     }
 
+    //餐桌管理（管理员）
     @RequestMapping(value = "/{rId}/admin/tablegroup",method = RequestMethod.GET)
     public String tableGroupForAdmin(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
@@ -62,6 +65,7 @@ public class RestaurantController {
         return "table";
     }
 
+    //餐桌管理（服务员）
     @RequestMapping(value = "/{rId}/tablegroup",method = RequestMethod.GET)
     public String tableGroupForWaiter(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");

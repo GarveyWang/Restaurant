@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 餐桌状态枚举类
+ */
 public enum TableStateEnum {
     FREE(0,"空闲"),
     BUSY(1,"有客");

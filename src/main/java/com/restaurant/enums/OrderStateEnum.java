@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 餐桌点单状态枚举类
+ */
 public enum OrderStateEnum {
     ORDERING(0,"正在点单"),
     SUBMITTED(1,"已提交"),

@@ -27,7 +27,7 @@ public class TableController {
     @Autowired
     private TableGroupService tableGroupService;
 
-
+    //添加餐桌组
     @RequestMapping(value = "/group/add",method = RequestMethod.POST)
     public String addTableGroup(TableGroup tableGroup, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -41,6 +41,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //添加餐桌
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public String addTable(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -56,6 +57,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //删除餐桌
     @RequestMapping(value = "/{tId}/delete",method = RequestMethod.GET)
     public String deleteTable(@PathVariable("tId") int tId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -73,6 +75,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //删除餐桌组
     @RequestMapping(value = "/group/{tgId}/delete",method = RequestMethod.GET)
     public String deleteTableGroup(@PathVariable("tgId") int tgId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -90,6 +93,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //更新餐桌组
     @RequestMapping(value = "/group/{tgId}/update",method = RequestMethod.POST)
     public String updateTableGroup(TableGroup tableGroup, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -108,6 +112,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //更新餐桌
     @RequestMapping(value = "/{tId}/update",method = RequestMethod.POST)
     public String updateTable(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -125,6 +130,7 @@ public class TableController {
         return "redirect:/restaurant/" +sessionRId+ "/admin/tablegroup";
     }
 
+    //更新顾客信息
     @RequestMapping(value = "/{tId}/guest/update",method = RequestMethod.POST)
     public String updateGuestInfo(DiningTable table, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();

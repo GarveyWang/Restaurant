@@ -2,6 +2,9 @@ package com.restaurant.dao;
 
 import com.restaurant.entity.Cashier;
 
+/**
+ * 收银台相关Dao
+ */
 public interface CashierDao {
     /**
      * 通过主键删除指定收银台记录

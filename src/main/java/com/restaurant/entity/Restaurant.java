@@ -3,6 +3,9 @@ package com.restaurant.entity;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 餐馆
+ */
 public class Restaurant {
     private Integer rId;
 

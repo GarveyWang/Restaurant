@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 点单状态枚举类
+ */
 public enum OrderDishStateEnum {
     WAITING(0,"排队中"),
     COOKING(1,"正在烹饪"),

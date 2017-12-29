@@ -1,5 +1,8 @@
 package com.restaurant.enums;
 
+/**
+ * 订单状态枚举类
+ */
 public enum OrderFormStateEnum {
     NOT_END(0,"未结束"),
     END(1,"已结束");

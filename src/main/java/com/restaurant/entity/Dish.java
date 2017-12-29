@@ -1,5 +1,8 @@
 package com.restaurant.entity;
 
+/**
+ * 菜品
+ */
 public class Dish {
     private Integer dId;
 

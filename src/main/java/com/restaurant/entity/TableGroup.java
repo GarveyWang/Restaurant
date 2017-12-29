@@ -3,6 +3,9 @@ package com.restaurant.entity;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 餐桌组
+ */
 public class TableGroup {
     private Integer tgId;
 

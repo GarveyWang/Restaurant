@@ -2,6 +2,9 @@ package com.restaurant.dto;
 
 import java.util.Date;
 
+/**
+ * 订单相关Dto
+ */
 public class OrderFormItem {
     private int dId;
     private String name;

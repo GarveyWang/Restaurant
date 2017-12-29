@@ -2,6 +2,9 @@ package com.restaurant.entity;
 
 import java.util.Date;
 
+/**
+ * 订单
+ */
 public class OrderForm {
     private Integer oId;
 

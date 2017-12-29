@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+/**
+ * 收银界面拦截器
+ */
 public class CashierInterceptor implements HandlerInterceptor {
 
     @Override

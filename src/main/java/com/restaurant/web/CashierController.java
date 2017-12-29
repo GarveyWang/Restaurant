@@ -22,6 +22,7 @@ public class CashierController {
     @Autowired
     private OrderFormService orderFormService;
 
+    //收银台未结算的订单展示页面
     @RequestMapping(value = "/{rId}/task",
             method = RequestMethod.GET)
     public String task(@PathVariable int rId, HttpServletRequest request, Model model){
@@ -31,7 +32,7 @@ public class CashierController {
         return "cashier";
     }
 
-
+    //结束订单
     @RequestMapping(value = "/{oId}/end",
             method = RequestMethod.POST)
     public String end(OrderForm orderForm, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){

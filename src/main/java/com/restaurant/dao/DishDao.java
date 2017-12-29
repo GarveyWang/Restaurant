@@ -6,6 +6,9 @@ import com.restaurant.entity.Dish;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * 菜品相关Dao
+ */
 public interface DishDao {
     /**
      * 通过菜品Id删除对应菜品记录
@@ -57,7 +60,7 @@ public interface DishDao {
     int updateByPrimaryKeySelective(Dish record);
 
     /**
-     * 通过主键选择性更新菜品记录，更新所有字段
+     * 通过主键更新菜品记录，更新所有字段
      * @param record 菜品记录
      * @return 更新数目
      */

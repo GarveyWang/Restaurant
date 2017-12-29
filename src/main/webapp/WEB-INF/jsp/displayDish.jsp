@@ -35,7 +35,7 @@
             <span class="hamb-bottom"></span>
         </button>
         <div class="container"  >
-            <h3 style="text-align: center">每日推荐菜品</h3>
+            <h3 align="center" style="color: #f7e1b5">每日推荐菜品</h3>
             <div class="row">
                 <div id="myCarousel" class="carousel slide col-md-8" style="max-height: 600px">
                     <ol class="carousel-indicators" >

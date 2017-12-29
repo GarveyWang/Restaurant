@@ -2,6 +2,9 @@ package com.restaurant.entity;
 
 import javax.annotation.Resource;
 
+/**
+ * 点单主键
+ */
 public class OrderDishKey {
     private Integer oId;
 

@@ -28,6 +28,7 @@ public class DishController {
     @Autowired
     private DishGroupService dishGroupService;
 
+    //增加菜品组
     @RequestMapping(value = "/group/add",method = RequestMethod.POST)
     public String addDishGroup(DishGroup dishGroup, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -42,6 +43,7 @@ public class DishController {
         return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
+    //增加菜品
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public String addDish(Dish dish, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -54,6 +56,7 @@ public class DishController {
         return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
+    //删除菜品组
     @RequestMapping(value = "/group/{dgId}/delete",method = RequestMethod.GET)
     public String deleteDishGroup(@PathVariable("dgId") int dgId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -71,6 +74,7 @@ public class DishController {
         return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
+    //删除菜品
     @RequestMapping(value = "/{dId}/delete",method = RequestMethod.GET)
     public String deleteDish(@PathVariable("dId") int dId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -88,6 +92,7 @@ public class DishController {
         return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
+    //更新菜品组
     @RequestMapping(value = "/group/{dgId}/update",method = RequestMethod.POST)
     public String updateDishGroup(DishGroup dishGroup, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -106,6 +111,7 @@ public class DishController {
         return "redirect:/kitchen/" +sessionRId+ "/dishgroup";
     }
 
+    //更新菜品
     @RequestMapping(value = "/{dId}/update",method = RequestMethod.POST)
     public String updateDish(Dish dish, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();

@@ -30,15 +30,15 @@ public class AccountController {
     @Autowired
     private CashierService cashierService;
 
-
+    //登录入口
     @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String login( Model model){
         return "login";
     }
 
+    //管理员登录
     @RequestMapping(value = "/adminlogin",method = RequestMethod.POST)
     public String adminLogin(Restaurant rest, HttpServletRequest request, RedirectAttributes attributes, Model model){
-
         LoginStateEnum loginState=restaurantService.validate(rest);
         if(loginState!=LoginStateEnum.SUCCESS){
             model.addAttribute("msg", loginState.getStateInfo());
@@ -56,6 +56,7 @@ public class AccountController {
         return "redirect:/restaurant/"+rId+"/admin";
     }
 
+    //服务员登录
     @RequestMapping(value = "/waiterlogin",method = RequestMethod.POST)
     public String waiterLogin(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
@@ -78,6 +79,7 @@ public class AccountController {
         return "redirect:/restaurant/"+rId+"/tablegroup";
     }
 
+    //厨房登录
     @RequestMapping(value = "/kitchenlogin",method = RequestMethod.POST)
     public String kitchenLogin(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
@@ -101,6 +103,7 @@ public class AccountController {
         return "redirect:/kitchen/"+rId+"/task";
     }
 
+    //收银台登录
     @RequestMapping(value = "/cashierlogin",method = RequestMethod.POST)
     public String cashierLogin(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
@@ -124,11 +127,13 @@ public class AccountController {
         return "redirect:/cashier/"+rId+"/task";
     }
 
+    //餐馆注册入口
     @RequestMapping(value = "/restreg",method = RequestMethod.GET)
     public String register( Model model){
         return "register";
     }
 
+    //餐馆注册
     @RequestMapping(value = "/restaurant/add",
             method = RequestMethod.POST)
     public String restaurantRegister(Restaurant restaurant, Model model){
@@ -147,6 +152,7 @@ public class AccountController {
         return "login";
     }
 
+    //服务员账号注册
     @RequestMapping(value = "/waiter/add",
             method = RequestMethod.POST)
     public String waiterRegister(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -162,6 +168,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
+    //厨房账号注册
     @RequestMapping(value = "/kitchen/add",
             method = RequestMethod.POST)
     public String kitchenRegister(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -177,7 +184,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
-
+    //服务员账号注册
     @RequestMapping(value = "/waiter/{wId}/delete",
             method = RequestMethod.GET)
     public String waiterDelete(@PathVariable("wId") int wId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -197,6 +204,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
+    //删除厨房账号
     @RequestMapping(value = "/kitchen/{kId}/delete",
             method = RequestMethod.GET)
     public String kitchenDelete(@PathVariable("kId") int kId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -216,7 +224,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
-
+    //服务员账号更新
     @RequestMapping(value = "/waiter/{wId}/update",
             method = RequestMethod.POST)
     public String waiterUpdate(Waiter waiter, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -237,6 +245,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
+    //厨房账号更新
     @RequestMapping(value = "/kitchen/{kId}/update",
             method = RequestMethod.POST)
     public String kitchenUpdate(Kitchen kitchen, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -257,7 +266,7 @@ public class AccountController {
         return "redirect:/restaurant/"+sessionRId+"/admin/employee";
     }
 
-
+    //收银台账号更新
     @RequestMapping(value = "/cashier/{cId}/update",
             method = RequestMethod.POST)
     public String cashierUpdate(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){

@@ -1,5 +1,8 @@
 package com.restaurant.entity;
 
+/**
+ * 服务员
+ */
 public class Waiter {
     private Integer wId;
 

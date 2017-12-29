@@ -1,6 +1,8 @@
 package com.restaurant.entity;
 
-
+/**
+ * 厨房
+ */
 public class Kitchen {
 
     private Integer kId;

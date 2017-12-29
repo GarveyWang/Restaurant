@@ -41,6 +41,7 @@ public class CustomerController {
     @Autowired
     private OrderFormService orderFormService;
 
+    //顾客登录
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String login(DiningTable diningtable, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
@@ -65,6 +66,7 @@ public class CustomerController {
         return "redirect:/customer/"+tId+"/menu";
     }
 
+    //顾客登录首页信息
     @RequestMapping(value = "/{tId}/menu",
             method = RequestMethod.GET)
     public String menu(@PathVariable("tId") int tId, HttpServletRequest request, Model model){
@@ -94,6 +96,7 @@ public class CustomerController {
         return "menu";
     }
 
+    //增加点单项目
     @RequestMapping(value = "orderdish/{dId}/add",
             method = RequestMethod.POST)
     public String addOrderDish(OrderDish orderDish,HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -112,6 +115,7 @@ public class CustomerController {
         return "redirect:/customer/"+sessionTId+"/menu";
     }
 
+    //删除点单项目
     @RequestMapping(value = "orderdish/{dId}/delete",method = RequestMethod.GET)
     public String deleteOrderDish(@PathVariable("dId") int dId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
@@ -127,6 +131,7 @@ public class CustomerController {
         return "redirect:/customer/" +sessionTId+ "/menu";
     }
 
+    //更新点单
     @RequestMapping(value = "orderdish/{dId}/update",
             method = RequestMethod.POST)
     public String updateOrderDish(OrderDish orderDish,HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
@@ -145,6 +150,7 @@ public class CustomerController {
         return "redirect:/customer/"+sessionTId+"/menu";
     }
 
+    //展示已点订单
     @RequestMapping(value="displayDish",method = RequestMethod.GET)
     public String  displayDish(HttpServletRequest request,Model model){
         HttpSession session = request.getSession();

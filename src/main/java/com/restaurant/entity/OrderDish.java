@@ -2,6 +2,9 @@ package com.restaurant.entity;
 
 import java.util.Date;
 
+/**
+ * 点单
+ */
 public class OrderDish extends OrderDishKey {
     private String remark;
 

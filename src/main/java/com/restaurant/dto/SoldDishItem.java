@@ -1,5 +1,8 @@
 package com.restaurant.dto;
 
+/**
+ * 菜品售卖情况Dto
+ */
 public class SoldDishItem {
     private int dId;
     private int soldNumber;
