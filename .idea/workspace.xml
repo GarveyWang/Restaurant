@@ -10,354 +10,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd94c98d-a153-464e-856b-9021fd9604ac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/activity-duration.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/articlenext.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/articleprev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/banner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/banner3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/coffee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/copys.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/copyss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/dinner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/exits.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodnewlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodnews1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/404.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/activebg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/arrow24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/bd24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/bdbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/body.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/bottomdown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip_video24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip_video8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/btn24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cc-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cc-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cc-icon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/clip-circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/cover24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/detect.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/empty01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/fullbody.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/fullbody2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/glist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/grayshadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/hd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/hd24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/hdfull.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icn24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icn3-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icn3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon2-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon2-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon2-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon4-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon4-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon5-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon5-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon6-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon7-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icons24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/img24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/inputbg-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/inputbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/isay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/isay24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/joinbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/layerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/layerbgm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/layerbgt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/load.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/load01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/loadm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/loadtmsg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/loadv.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/login-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/login01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/login24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/menu24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/msgbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/nav2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/nav224.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/pimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/player.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/radaricon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shadow-in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shadow1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shadow2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/slid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/slid24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/speinfobg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/tempsavetip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/valibg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/valibg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/weibo-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/whiteshadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/xcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/xlist2bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lunch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdbanner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/nextbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/position.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/prevbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/qqzone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/qqzones.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/renren.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/renrens.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/reserve.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/sina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/sinas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/submit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/team1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/team2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/team3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/tengxunweibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/tengxunweibos.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/tieba24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/weixin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/weixins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/yue1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/yue2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/yue3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/about1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/about1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/about2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/about2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/about3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/activity-duration.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/articlenext.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/articleprev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/banner2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/banner3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/coffee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/copys.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/copyss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/dinner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/exit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/exits.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodlist6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodnewlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/foodnews1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/404.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/activebg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/arrow24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/bd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/bd24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/bdbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/body.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/bottomdown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/browsersavetip24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/browsersavetip8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/browsersavetip_video24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/browsersavetip_video8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/btn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/btn24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cc-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cc-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cc-icon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/clip-circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/cover24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/detect.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/empty.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/empty01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/fullbody.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/fullbody2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/glist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/grayshadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/hd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/hd24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/hdfull.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icn24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icn3-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icn3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon2-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon2-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon2-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon25.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon26.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon4-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon4-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon5-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon5-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon6-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon7-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icon9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/icons24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/img24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/inputbg-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/inputbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/intro.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/isay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/isay24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/joinbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/layerbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/layerbgm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/layerbgt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/load.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/load01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/loadm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/loadtmsg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/loadv.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/login-24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/login.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/login01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/login24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/menu24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/msgbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/nav2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/nav224.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/pimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/player.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/radaricon24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/shade.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/shadow-in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/shadow1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/shadow2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/slid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/slid24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/speinfobg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/start.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/tempsavetip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/valibg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/valibg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/weibo-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/weibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/whiteshadow.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/xcode.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/img/xlist2bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lunch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdbanner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/mdlist9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/nextbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/position.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/prevbtn.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/qqzone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/qqzones.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/renren.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/renrens.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/reserve.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/sina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/sinas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/submit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/team1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/team2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/team3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/tengxunweibo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/tengxunweibos.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/tieba24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/weixin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/weixins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/yue1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/yue2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/yue3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/company.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/company.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/displayDish.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/chuan2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lu6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/min6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/xiang1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/xiang2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/xiang3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/xiang4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/xiang5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/chuan2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/lu6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/min6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/xiang1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/xiang2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/xiang3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/xiang4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Restaurant/resources/images/companyImages/xiang5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/dto/SoldDishItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/dao/DishDao.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/dao/DishDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/service/DishService.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/service/DishService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/service/impl/DishServiceImpl.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/service/impl/DishServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/AccountController.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/AccountController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/CustomerController.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/RestaurantController.class" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/com/restaurant/web/RestaurantController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/dao/DishDao.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/dao/DishDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/service/DishService.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/service/DishService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/service/impl/DishServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/service/impl/DishServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/web/AccountController.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/web/AccountController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/web/CustomerController.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/web/CustomerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/restaurant/web/RestaurantController.class" afterPath="$PROJECT_DIR$/target/classes/com/restaurant/web/RestaurantController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/restaurant/dao/DishDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/restaurant/dao/DishDaoTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/web/AccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/web/AccountController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/CashierDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/CashierDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DiningTableDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DiningTableDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/service/DishService.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/service/DishService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/web/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/web/CustomerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/restaurant/web/RestaurantController.java" afterPath="$PROJECT_DIR$/src/main/java/com/restaurant/web/RestaurantController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kitchen.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kitchen.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/menu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/managerStyle.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/managerStyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/kitchen.jsp" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/kitchen.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/menu.jsp" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/menu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/resources/css/managerStyle.css" afterPath="$PROJECT_DIR$/target/Restaurant/resources/css/managerStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/DishDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DishDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/restaurant/dao/DishDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/restaurant/dao/DishDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/mapper/DishDao.xml" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/classes/mapper/DishDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/displayDish.jsp" afterPath="$PROJECT_DIR$/target/Restaurant/WEB-INF/jsp/displayDish.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/DishDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DishDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -397,101 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CashierServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/CashierServiceImpl.java">
+      <file leaf-file-name="DishDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiningTableServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DiningTableServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishGroupServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishGroupServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DishServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KitchenServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/KitchenServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderDishServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/OrderDishServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderFormServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/OrderFormServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestaurantServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/RestaurantServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableGroupServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/TableGroupServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaiterServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/WaiterServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="170">
+              <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -505,10 +128,10 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -548,14 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/entity/OrderDishKey.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/enums/OrderDishUpdateStateEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dto/KitchenTaskItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dao/OrderDishDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderFormDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/service/OrderFormService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/OrderFormServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/CashierController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/interceptor/AdminInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/interceptor/KitchenInterceptor.java" />
@@ -571,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/OrderDishDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dto/OrderFormItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/TableController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.min.css" />
@@ -590,15 +206,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/foot.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kitchen.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/RestaurantController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/managerStyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/default.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/company.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/com/restaurant/dao/DishDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DishDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dto/SoldDishItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/service/DishService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/menu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/kitchen.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/managerStyle.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/web/AccountController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dao/CashierDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DiningTableDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java" />
       </list>
     </option>
   </component>
@@ -629,10 +252,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="2197" />
-    <option name="y" value="244" />
-    <option name="width" value="1365" />
-    <option name="height" value="882" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -671,6 +294,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -720,16 +345,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="restaurant" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Restaurant" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurant" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
@@ -739,16 +355,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="restaurant" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Restaurant" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="restaurant" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
@@ -765,6 +371,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Restaurant" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Restaurant" type="b2602c69:ProjectViewProjectNode" />
@@ -879,8 +493,6 @@
       </pane>
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -964,6 +576,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="DishDaoTest.selectTop5SoldDishes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.restaurant.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Restaurant" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.restaurant.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.restaurant.dao.DishDaoTest" />
+      <option name="METHOD_NAME" value="selectTop5SoldDishes" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="KitchenDaoTest.selectByRId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -977,31 +614,6 @@
       <option name="PACKAGE_NAME" value="com.restaurant.dao" />
       <option name="MAIN_CLASS_NAME" value="com.restaurant.dao.KitchenDaoTest" />
       <option name="METHOD_NAME" value="selectByRId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RestaurantServiceTest.isRestaurantExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.restaurant.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Restaurant" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.restaurant.service" />
-      <option name="MAIN_CLASS_NAME" value="com.restaurant.service.RestaurantServiceTest" />
-      <option name="METHOD_NAME" value="isRestaurantExists" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1220,18 +832,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantById" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.isRestaurantExists" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantByIdWithEmployee" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KitchenDaoTest.selectByRId" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectByDgId" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantByIdWithEmployee" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KitchenDaoTest.selectByRId" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectByDgId" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectTop5SoldDishes" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectByDgId" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantByIdWithEmployee" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantById" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KitchenDaoTest.selectByRId" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.isRestaurantExists" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectTop5SoldDishes" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DishDaoTest.selectByDgId" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantByIdWithEmployee" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RestaurantServiceTest.selectRestaurantById" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KitchenDaoTest.selectByRId" />
       </list>
     </recent_temporary>
   </component>
@@ -1282,23 +894,20 @@
       <workItem from="1513786563532" duration="542000" />
       <workItem from="1513819177113" duration="422000" />
       <workItem from="1513990319861" duration="45317000" />
-      <workItem from="1514252796881" duration="62804000" />
-      <workItem from="1514506390608" duration="5952000" />
-      <workItem from="1514513518100" duration="9000" />
-      <workItem from="1514522696025" duration="6273000" />
-      <workItem from="1514529029241" duration="55000" />
+      <workItem from="1514252796881" duration="71372000" />
+      <workItem from="1514529294122" duration="8878000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DishDaoTest_selectByDgId - 2017.12.10 at 00h 29m 00s.xml">
-      <configuration name="DishDaoTest.selectByDgId" configurationId="JUnit" />
+    <history-entry file="DishDaoTest_selectTop5SoldDishes - 2017.12.29 at 15h 43m 43s.xml">
+      <configuration name="DishDaoTest.selectTop5SoldDishes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DishDaoTest_selectByDgId - 2017.12.10 at 00h 30m 31s.xml">
-      <configuration name="DishDaoTest.selectByDgId" configurationId="JUnit" />
+    <history-entry file="DishDaoTest_selectTop5SoldDishes - 2017.12.29 at 15h 45m 38s.xml">
+      <configuration name="DishDaoTest.selectTop5SoldDishes" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DishDaoTest_selectByDgId - 2017.12.10 at 00h 31m 03s.xml">
-      <configuration name="DishDaoTest.selectByDgId" configurationId="JUnit" />
+    <history-entry file="DishDaoTest_selectTop5SoldDishes - 2017.12.29 at 15h 53m 48s.xml">
+      <configuration name="DishDaoTest.selectTop5SoldDishes" configurationId="JUnit" />
     </history-entry>
     <history-entry file="KitchenDaoTest_selectByRId - 2017.12.09 at 14h 17m 42s.xml">
       <configuration name="KitchenDaoTest.selectByRId" configurationId="JUnit" />
@@ -1323,7 +932,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373263000" />
+    <option name="totallyTimeSpent" value="378420000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1335,7 +944,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1350,17 +959,18 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33361065" sideWeight="0.7798507" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08351178" sideWeight="0.7798507" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14702815" sideWeight="0.47654584" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.49570817" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28265524" sideWeight="0.81023455" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.49570817" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19288793" sideWeight="0.81023455" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.49570817" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5777897" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23551503" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20064378" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1369,7 +979,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14702815" sideWeight="0.47654584" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861897" sideWeight="0.4914163" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1426,403 +1035,323 @@
           <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="70" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/DiningTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/about3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/Cashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/coffee.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/Dish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/copyss.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/DishGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-407">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/Kitchen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodnews1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/OrderDishKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/OrderDish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodlist5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/OrderForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/foodnewlist1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/lunch.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/TableGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/entity/Waiter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/prevbtn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/nextbtn.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/mdlist4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/browsersavetip_video24.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/glist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon2-10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/icon8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/inputbg-8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/layerbgm.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/login-24.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/right.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/weibo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shadow2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/banner.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/tempsavetip.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/xcode.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/slid24.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/banner2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/articleprev.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/nav2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/shadow-in.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/companyImages/img/weibo-8.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="61">
+          <caret line="7636" column="17" lean-forward="true" selection-start-line="7636" selection-start-column="17" selection-end-line="7636" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/CashierDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="407">
+          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DiningTableDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/managerStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/company.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishGroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/KitchenDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/OrderDishDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/OrderFormDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/RestaurantDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/TableGroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/WaiterDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dto/KitchenTaskItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dto/OrderFormItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/enums/DeleteStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/CashierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/DiningTableService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/DishGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/DishService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/KitchenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/OrderDishService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/OrderFormService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/RestaurantService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/TableGroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/WaiterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1551">
-          <caret line="221" column="131" lean-forward="false" selection-start-line="221" selection-start-column="105" selection-end-line="221" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/CashierController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3475">
-          <caret line="41" column="47" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="47" />
+          <caret line="102" column="28" lean-forward="false" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/DishController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3068">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="-245">
+          <caret line="102" column="26" lean-forward="false" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/KitchenController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/restaurant/dao/DishDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/RestaurantController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/TableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4030">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/CashierServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DiningTableServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishGroupServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="19" />
+        <state relative-caret-position="328">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/DishServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="538">
+          <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/KitchenServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DishDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="444">
+          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <marker date="1514533974140" expanded="true" signature="1003:1106" ph="select from dish" />
+            <marker date="1514533974140" expanded="true" signature="1213:1317" ph="select from dish" />
+            <marker date="1514533974140" expanded="true" signature="1417:1677" ph="SELECT d_id,... " />
+            <marker date="1514533974140" expanded="true" signature="1417:1678" ph="SELECT d_id,... order_dish" />
+            <marker date="1514533974140" expanded="true" signature="1766:1823" ph="delete from " />
+            <marker date="1514533974140" expanded="true" signature="1904:1963" ph="delete from " />
+            <marker date="1514533974140" expanded="true" signature="2047:2384" ph="insert into dish... " />
+            <marker date="1514533974140" expanded="true" signature="3851:4549" ph="update dish " />
+            <marker date="1514533974140" expanded="true" signature="4644:4995" ph="update dish " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dto/SoldDishItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/web/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+          <folding>
+            <element signature="e#6396#6397#0" expanded="true" />
+            <element signature="e#6428#6429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/DishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/OrderDishServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/displayDish.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="148">
+          <caret line="157" column="43" lean-forward="true" selection-start-line="157" selection-start-column="43" selection-end-line="157" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/OrderFormServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/CashierDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="33" column="41" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="41" />
+        <state relative-caret-position="207">
+          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/RestaurantServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DiningTableDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="1517">
+          <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/TableGroupServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/dao/DishDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/restaurant/service/impl/WaiterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="21" />
+        <state relative-caret-position="170">
+          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
           <folding />
         </state>
       </provider>

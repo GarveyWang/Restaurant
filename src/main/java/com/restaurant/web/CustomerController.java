@@ -1,6 +1,7 @@
 package com.restaurant.web;
 
 import com.restaurant.dto.OrderFormItem;
+import com.restaurant.dto.SoldDishItem;
 import com.restaurant.entity.*;
 import com.restaurant.enums.*;
 import com.restaurant.service.*;
@@ -16,7 +17,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -31,6 +31,9 @@ public class CustomerController {
 
     @Autowired
     private DishGroupService dishGroupService;
+
+    @Autowired
+    private DishService dishService;
 
     @Autowired
     private OrderDishService orderDishService;
@@ -143,11 +146,17 @@ public class CustomerController {
     }
 
     @RequestMapping(value="displayDish",method = RequestMethod.GET)
-    public String  displayDish(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+    public String  displayDish(HttpServletRequest request,Model model){
+        HttpSession session = request.getSession();
+        int rId = (int)session.getAttribute("rId");
+
+        List<SoldDishItem> top5SoldDishList = dishService.getTop5SoldDishes(rId);
+        model.addAttribute("top5SoldDishList",top5SoldDishList);
+
         return "displayDish";
     }
     @RequestMapping(value="company",method = RequestMethod.GET)
-    public String company(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+    public String company(){
         return "company";
     }
 }

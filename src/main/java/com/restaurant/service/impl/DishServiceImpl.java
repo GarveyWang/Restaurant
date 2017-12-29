@@ -2,6 +2,7 @@ package com.restaurant.service.impl;
 
 import com.restaurant.dao.DishDao;
 import com.restaurant.dao.DishGroupDao;
+import com.restaurant.dto.SoldDishItem;
 import com.restaurant.entity.Dish;
 import com.restaurant.entity.DishGroup;
 import com.restaurant.enums.DeleteStateEnum;
@@ -11,6 +12,10 @@ import com.restaurant.service.DishGroupService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 
 @Service("dishService")
@@ -74,5 +79,24 @@ public class DishServiceImpl implements com.restaurant.service.DishService {
         }else {
             return UpdateStateEnum.FAILED;
         }
+    }
+
+    @Override
+    public List<SoldDishItem> getTop5SoldDishes(int rId) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
+        calendar.add(Calendar.MONTH, -1);
+        Date oneMonthAgo = calendar.getTime();
+        List<SoldDishItem> soldDishItemList = dishDao.selectTop5SoldDishes(1,oneMonthAgo);
+        for (Iterator<SoldDishItem> iterator = soldDishItemList.iterator();iterator.hasNext();){
+            SoldDishItem soldDishItem = iterator.next();
+            Dish dish =dishDao.selectById(soldDishItem.getdId());
+            if (dish==null){
+                iterator.remove();
+                continue;
+            }
+            soldDishItem.setDishName(dish.getName());
+        }
+        return soldDishItemList;
     }
 }

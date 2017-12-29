@@ -28,6 +28,15 @@
     where dg_id = #{dgId,jdbcType=INTEGER}
   </select>
 
+  <select id="selectTop5SoldDishes" resultType="com.restaurant.dto.SoldDishItem">
+    SELECT d_id, count(d_id) as sold_number
+    FROM restaurant.order_dish join restaurant.order_form on restaurant.order_form.o_id = restaurant.order_dish.o_id
+    where r_id = #{0} and order_time > #{1}
+    group by(d_id)
+    order by sold_number desc
+    limit 5;
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from dish
     where d_id = #{dId,jdbcType=INTEGER}
