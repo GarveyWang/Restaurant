@@ -33,7 +33,7 @@
         <div class="container" >
 
             <table class="table" style="color: white">
-                <caption>收银台</caption>
+                <caption style="color: #f7e1b5">收银台</caption>
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -48,7 +48,7 @@
                     <td>${cashier.password}</td>
                     <td>${cashier.active}</td>
                     <td>
-                        <button wid="${cashier.cId}" wpwd="${cashier.password}" class="btn btn-default" id="cashier_update_btn" data-toggle="modal"
+                        <button wid="${cashier.cId}" wpwd="${cashier.password}" class="btn btn-primary" id="cashier_update_btn" data-toggle="modal"
                         data-target="#updateCashier">修改</button>
                     </td>
                 </tr>
@@ -56,7 +56,7 @@
             </table>
 
             <table class="table" style="color:white;">
-                <caption>服务员列表</caption>
+                <caption style="color: #f7e1b5">服务员列表</caption>
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -74,9 +74,9 @@
                         <td>${waiter.password}</td>
                         <td>${waiter.active}</td>
                         <td>
-                            <a href="/account/waiter/${waiter.wId}/delete" class="btn btn-default">删除</a>
-                            <button wid="${waiter.wId}" wname="${waiter.name}" wpwd="${waiter.password}" wactive="${waiter.active}" class="btn btn-default waiter_update_btn"
+                            <button wid="${waiter.wId}" wname="${waiter.name}" wpwd="${waiter.password}" wactive="${waiter.active}" class="btn btn-primary waiter_update_btn"
                             data-toggle="modal" data-target="#updateWaiter">修改</button>
+                            <a href="/account/waiter/${waiter.wId}/delete" class="btn btn-warning">删除</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -84,7 +84,7 @@
             </table>
 
             <table class="table" style="color:white;">
-                <caption>厨房列表</caption>
+                <caption style="color: #f7e1b5">厨房列表</caption>
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -102,9 +102,9 @@
                         <td>${kitchen.password}</td>
                         <td>${kitchen.active}</td>
                         <td>
-                            <a href="/account/kitchen/${kitchen.kId}/delete" class="btn btn-default">删除</a>
-                            <button kid="${kitchen.kId}" kname="${kitchen.name}" kpwd="${kitchen.password}" kactive="${kitchen.active}" class="btn btn-default kitchen_update_btn"
+                            <button kid="${kitchen.kId}" kname="${kitchen.name}" kpwd="${kitchen.password}" kactive="${kitchen.active}" class="btn btn-primary kitchen_update_btn"
                             data-toggle="modal" data-target="#updateKitchen">修改</button>
+                            <a href="/account/kitchen/${kitchen.kId}/delete" class="btn btn-warning">删除</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -135,8 +135,8 @@
                                 <option>0</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="kitchen_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="kitchen_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -164,8 +164,8 @@
                                 <option>0</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="waiter_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="waiter_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -190,8 +190,8 @@
                                 <option>0</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="cashier_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="cashier_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -204,14 +204,14 @@
             <div class="modal-body">
                 <form id="kitchen_reg_form" role="form" method="post" action="/account/kitchen/add">
                     <div class="form-group form-inline">
-                        <label>厨房名称
+                        <label>厨房的名称
                             <input type="text" class="form-control" name="name" placeholder="请输入厨房名称" >
                         </label>
-                        <label>厨房密码
-                            <input type="password" class="form-control" name="password" placeholder="请输入厨房密码">
+                        <label>厨房的密码
+                            <input type="password" class="form-control" name="password" placeholder="请输入厨房的密码">
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="kitchen_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="kitchen_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -230,8 +230,8 @@
                         <label>服务员密码
                             <input type="password" class="form-control" name="password" placeholder="请输入服务员密码">
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="waiter_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="waiter_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>

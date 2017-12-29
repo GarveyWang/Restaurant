@@ -42,7 +42,7 @@
                         <td>${item.totalPrice}</td>
                         <td>${item.discount}</td>
                         <td>
-                            <button class="btn btn-success end_btn" oid="${item.oId}" tid="${item.tId}">
+                            <button class="btn btn-warning end_btn" oid="${item.oId}" tid="${item.tId}">
                                 结束
                             </button>
                         </td>

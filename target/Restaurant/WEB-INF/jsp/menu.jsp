@@ -33,13 +33,11 @@
             <span class="hamb-bottom"></span>
         </button>
         <div class="container" >
-
-
             <div>
-                <h3 style="color: white">菜单</h3>
+                <h3 align="center" style="color: #f7e1b5">菜单</h3>
                 <c:forEach var="dishGroup" items="${dishGroupList}">
                     <table class="table" style="color: white">
-                        <caption style="color: white">Group ID:${dishGroup.dgId} Group Name:${dishGroup.name}</caption>
+                        <caption style="color: #f7e1b5">Group ID:${dishGroup.dgId} Group Name:${dishGroup.name}</caption>
                         <thead>
                         <tr>
                             <th>菜品ID</th>
@@ -71,7 +69,7 @@
                                                     </c:forEach>
                                                 </select>
                                             </label>
-                                            <button class="btn btn-default add_dish_btn" did="${dish.dId}" >
+                                            <button class="btn btn-primary add_dish_btn" did="${dish.dId}" >
                                                 添加
                                             </button>
                                         </div>
@@ -118,13 +116,13 @@
                                 <td>${item.state}</td>
                                 <td>${item.orderTime}</td>
                                 <td>
-                                    <button class="btn btn-default order_dish_update_form_open_btn"
+                                    <button class="btn btn-primary order_dish_update_form_open_btn"
                                             did="${item.dId}" remark="${item.remark}" ordernumber="${item.orderNumber}"
                                             servenumber="${item.serveNumber}" dname="${item.name}" score="${item.score}"
                                             data-toggle="modal" data-target="#updateOrder">
                                         修改
                                     </button>
-                                    <a href="/customer/orderdish/${item.dId}/delete" class="btn btn-default" data-dismiss="modal">删除</a>
+                                    <a href="/customer/orderdish/${item.dId}/delete" class="btn btn-warning" data-dismiss="modal">删除</a>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -132,7 +130,7 @@
                     </table>
                 </div>
                 <div class="center">
-                    <button class="btn btn-danger" data-dismiss="modal" >退出</button>
+                    <button class="btn btn-info" data-dismiss="modal" >退出</button>
                 </div>
             </div>
         </div>
@@ -167,8 +165,8 @@
                                 </c:forEach>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="order_dish_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-success">更新</button>
+                        <button type="button" id="order_dish_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
