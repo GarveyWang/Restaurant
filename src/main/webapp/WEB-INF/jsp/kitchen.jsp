@@ -77,6 +77,7 @@
     </div>
 </div>
 </body>
+<%@include file="common/foot.jsp"%>
 <script type="text/javascript">
     document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/3.jpg)";
    $(function () {
@@ -118,5 +119,4 @@
         })
     })
 </script>
-<%@include file="common/foot.jsp"%>
 </html>
