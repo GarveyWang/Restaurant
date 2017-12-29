@@ -142,11 +142,12 @@ public class CustomerController {
         return "redirect:/customer/"+sessionTId+"/menu";
     }
 
-    @RequestMapping(value = "test/{rId}",
-            method = RequestMethod.GET)
-    public String test(HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
-
-        return "redirect:/test";
+    @RequestMapping(value="displayDish",method = RequestMethod.GET)
+    public String  displayDish(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+        return "displayDish";
     }
-
+    @RequestMapping(value="company",method = RequestMethod.GET)
+    public String company(HttpServletRequest request,RedirectAttributes attributes,RedirectAttributesModelMap modelMap){
+        return "company";
+    }
 }

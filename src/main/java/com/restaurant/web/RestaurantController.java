@@ -66,7 +66,6 @@ public class RestaurantController {
     public String tableGroupForWaiter(@PathVariable int rId, HttpServletRequest request, Model model){
         int sessionRId=(int)request.getSession().getAttribute("rId");
         List<TableGroup>tableGroupList=tableGroupService.selectByRId(sessionRId);
-
         int tableCount=tableGroupService.getTableCount(tableGroupList);
         model.addAttribute("role","waiter");
         model.addAttribute("tableGroupList",tableGroupList);

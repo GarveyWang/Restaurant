@@ -102,7 +102,7 @@ public class AccountController {
     }
 
     @RequestMapping(value = "/cashierlogin",method = RequestMethod.POST)
-    public String CashierLogin(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, Model model){
+    public String cashierLogin(Cashier cashier, HttpServletRequest request, RedirectAttributes attributes, Model model){
 
         LoginStateEnum loginState=cashierService.validate(cashier);
         if(loginState!=LoginStateEnum.SUCCESS){
@@ -199,14 +199,14 @@ public class AccountController {
 
     @RequestMapping(value = "/kitchen/{kId}/delete",
             method = RequestMethod.GET)
-    public String kitchenDelete(@PathVariable("kId") int wId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
+    public String kitchenDelete(@PathVariable("kId") int kId, HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
         HttpSession session=request.getSession();
         int sessionRId=(int)session.getAttribute("rId");
 
         DeleteStateEnum deleteState=null;
 
-        if(sessionRId == kitchenService.getRIdByKId(wId)){
-            deleteState=kitchenService.deleteById(wId);
+        if(sessionRId == kitchenService.getRIdByKId(kId)){
+            deleteState=kitchenService.deleteById(kId);
         }else {
             deleteState=DeleteStateEnum.FAILED;
         }
