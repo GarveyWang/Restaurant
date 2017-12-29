@@ -3,137 +3,152 @@
 <head>
     <title>菜单</title>
     <%@include file="common/head.jsp"%>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/leafDemo.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/managerStyle.css">
 </head>
 
 <body>
-<div class="container">
-    <div>${msg}</div>
 
-    <form id="order_dish_update_form" role="form" method="post">
-        <div class="form-group form-inline">
-            <label>菜名
-                <input type="text" id="d_name" class="form-control" disabled="disabled">
-            </label>
-            <label>菜品ID
-                <input type="text" id="d_id" class="form-control" name="dId" disabled="disabled">
-            </label>
-            <label>备注
-                <input type="text" id="remark" class="form-control" name="remark" placeholder="请输入备注" >
-            </label>
-            <label>已点数量
-                <select id="order_number" class="form-control" name="orderNumber">
-                    <c:forEach var="i" begin="1" end="20">
-                        <option value="${i}">${i}</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <label>评分
-                <select id="score" class="form-control" name="score">
-                    <c:forEach var="i" begin="1" end="5">
-                        <option value="${i}">${i}</option>
-                    </c:forEach>
-                </select>
-            </label>
-            <button type="submit" class="btn btn-default">更新</button>
-            <button type="button" id="order_dish_update_form_close_btn" class="btn btn-default">关闭</button>
-        </div>
-    </form>
-
-
-    <div>
-        <table class="table">
-            <caption>订单号：${oId} &nbsp; &nbsp; 总价： ${totalPrice}</caption>
-            <thead>
-            <tr>
-                <th>菜品ID</th>
-                <th>名称</th>
-                <th>备注</th>
-                <th>价格</th>
-                <th>已点数量</th>
-                <th>已上数量</th>
-                <th>状态</th>
-                <th>时间</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach var="item" items="${orderFormItemList}">
-                <tr>
-                    <td>${item.dId}</td>
-                    <td>${item.name}</td>
-                    <td>${item.remark}</td>
-                    <td>${item.price}</td>
-                    <td>${item.orderNumber}</td>
-                    <td>${item.serveNumber}</td>
-                    <td>${item.state}</td>
-                    <td>${item.orderTime}</td>
-                    <td>
-                        <a href="/customer/orderdish/${item.dId}/delete" class="btn btn-default">删除</a>
-                        <button class="btn btn-default order_dish_update_form_open_btn"
-                                did="${item.dId}" remark="${item.remark}" ordernumber="${item.orderNumber}"
-                                servenumber="${item.serveNumber}" dname="${item.name}" score="${item.score}">
-                            修改
-                        </button>
-                    </td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
-    </div>
-
-
-
-    <div>
-        <h3>菜单</h3>
-        <c:forEach var="dishGroup" items="${dishGroupList}">
-            <table class="table">
-                <caption>Group ID:${dishGroup.dgId} Group Name:${dishGroup.name}</caption>
-                <thead>
-                <tr>
-                    <th>菜品ID</th>
-                    <th>名称</th>
-                    <th>描述</th>
-                    <th>价格</th>
-                    <th>售卖状态</th>
-                    <th>操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach var="dish" items="${dishGroup.dishes}">
-                    <c:if test="${dish.active>0}">
+<div id="wrapper">
+    <div class="overlay"></div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper">
+        <ul class="nav sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#"><i class="fa fa-user"></i>顾客</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="page-content-wrapper">
+        <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+        <div class="container" >
+            <form id="order_dish_update_form" role="form" method="post" style="color: white">
+                <div class="form-group form-inline">
+                    <label>菜名
+                        <input type="text" id="d_name" class="form-control" disabled="disabled">
+                    </label>
+                    <label>菜品ID
+                        <input type="text" id="d_id" class="form-control" name="dId" disabled="disabled">
+                    </label>
+                    <label>备注
+                        <input type="text" id="remark" class="form-control" name="remark" placeholder="请输入备注" >
+                    </label>
+                    <label>已点数量
+                        <select id="order_number" class="form-control" name="orderNumber">
+                            <c:forEach var="i" begin="1" end="20">
+                                <option value="${i}">${i}</option>
+                            </c:forEach>
+                        </select>
+                    </label>
+                    <label>评分
+                        <select id="score" class="form-control" name="score">
+                            <c:forEach var="i" begin="1" end="5">
+                                <option value="${i}">${i}</option>
+                            </c:forEach>
+                        </select>
+                    </label>
+                    <button type="submit" class="btn btn-default">更新</button>
+                    <button type="button" id="order_dish_update_form_close_btn" class="btn btn-default">关闭</button>
+                </div>
+            </form>
+            <div>
+                <table class="table" style="color: white">
+                    <caption style="color: white">订单号：${oId} &nbsp; &nbsp; 总价： ${totalPrice}</caption>
+                    <thead>
+                    <tr>
+                        <th>菜品ID</th>
+                        <th>名称</th>
+                        <th>备注</th>
+                        <th>价格</th>
+                        <th>已点数量</th>
+                        <th>已上数量</th>
+                        <th>状态</th>
+                        <th>时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach var="item" items="${orderFormItemList}">
                         <tr>
-                            <td>${dish.dId}</td>
-                            <td>${dish.name}</td>
-                            <td>${dish.description}</td>
-                            <td>${dish.price}</td>
-                            <td>${dish.status}</td>
+                            <td>${item.dId}</td>
+                            <td>${item.name}</td>
+                            <td>${item.remark}</td>
+                            <td>${item.price}</td>
+                            <td>${item.orderNumber}</td>
+                            <td>${item.serveNumber}</td>
+                            <td>${item.state}</td>
+                            <td>${item.orderTime}</td>
                             <td>
-                                <div class="form-group form-inline">
-                                    <label>备注
-                                        <input type="text" id="remark_${dish.dId}" class="form-control" placeholder="备注">
-                                    </label>
-                                    <label>数量
-                                        <select name="dgId" id="order_number_${dish.dId}" class="form-control">
-                                            <c:forEach var="i" begin="1" end="20">
-                                                <option value="${i}">${i}</option>
-                                            </c:forEach>
-                                        </select>
-                                    </label>
-                                    <button class="btn btn-default add_dish_btn" did="${dish.dId}" >
-                                        添加
-                                    </button>
-                                </div>
+                                <a href="/customer/orderdish/${item.dId}/delete" class="btn btn-default">删除</a>
+                                <button class="btn btn-default order_dish_update_form_open_btn"
+                                        did="${item.dId}" remark="${item.remark}" ordernumber="${item.orderNumber}"
+                                        servenumber="${item.serveNumber}" dname="${item.name}" score="${item.score}">
+                                    修改
+                                </button>
                             </td>
                         </tr>
-                    </c:if>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div>
+                <h3 style="color: white">菜单</h3>
+                <c:forEach var="dishGroup" items="${dishGroupList}">
+                    <table class="table" style="color: white">
+                        <caption style="color: white">Group ID:${dishGroup.dgId} Group Name:${dishGroup.name}</caption>
+                        <thead>
+                        <tr>
+                            <th>菜品ID</th>
+                            <th>名称</th>
+                            <th>描述</th>
+                            <th>价格</th>
+                            <th>售卖状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <c:forEach var="dish" items="${dishGroup.dishes}">
+                            <c:if test="${dish.active>0}">
+                                <tr>
+                                    <td>${dish.dId}</td>
+                                    <td>${dish.name}</td>
+                                    <td>${dish.description}</td>
+                                    <td>${dish.price}</td>
+                                    <td>${dish.status}</td>
+                                    <td>
+                                        <div class="form-group form-inline">
+                                            <label>备注
+                                                <input type="text" id="remark_${dish.dId}" class="form-control" placeholder="备注">
+                                            </label>
+                                            <label>数量
+                                                <select name="dgId" id="order_number_${dish.dId}" class="form-control">
+                                                    <c:forEach var="i" begin="1" end="20">
+                                                        <option value="${i}">${i}</option>
+                                                    </c:forEach>
+                                                </select>
+                                            </label>
+                                            <button class="btn btn-default add_dish_btn" did="${dish.dId}" >
+                                                添加
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </c:if>
+                        </c:forEach>
+                        </tbody>
+                    </table>
                 </c:forEach>
-                </tbody>
-            </table>
-        </c:forEach>
+            </div>
+
+        </div>
     </div>
-
 </div>
-
 </body>
 
 <%--<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -144,6 +159,7 @@
 <%@include file="common/foot.jsp"%>
 
 <script type="text/javascript">
+    document.body.style.backgroundImage="URL(${pageContext.request.contextPath}/resources/images/userInterface.jpg)";
     $(function () {
         $('#order_dish_update_form').hide();
 

@@ -48,11 +48,11 @@
                         <div class="form-bottom">
                         <div>
                             <ul id="myTab" class="nav nav-tabs">
-                                <li class="active"><a href="#waiter" data-toggle="tab">服务员</a> </li>
-                                <li><a href="#cook" data-toggle="tab">厨师</a> </li>
-                                <li><a href="#cashier" data-toggle="tab">收银台</a> </li>
-                                <li><a href="#restaurant" data-toggle="tab">管理员</a> </li>
-                                <li><a href="#register" data-toggle="tab">餐厅注册</a> </li>
+                                <li class="active"><a href="#waiter" data-toggle="tab" style="color: black">服务员</a> </li>
+                                <li><a href="#cook" data-toggle="tab" style="color: black">厨师</a> </li>
+                                <li><a href="#cashier" data-toggle="tab" style="color: black">收银台</a> </li>
+                                <li><a href="#restaurant" data-toggle="tab" style="color: black">管理员</a> </li>
+                                <li><a href="#register" data-toggle="tab" style="color: black">餐厅注册</a> </li>
                             </ul>
                             <div id="myTabContent" class="tab-content">
 

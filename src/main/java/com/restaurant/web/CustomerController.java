@@ -142,6 +142,11 @@ public class CustomerController {
         return "redirect:/customer/"+sessionTId+"/menu";
     }
 
+    @RequestMapping(value = "test/{rId}",
+            method = RequestMethod.GET)
+    public String test(HttpServletRequest request, RedirectAttributes attributes, RedirectAttributesModelMap modelMap){
 
+        return "redirect:/test";
+    }
 
 }
