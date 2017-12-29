@@ -29,7 +29,7 @@
             <div>${msg}</div>
             <div>
                 <table class="table" style="color: white">
-                    <caption>任务队列</caption>
+                    <caption style="color: #f7e1b5">任务队列</caption>
                     <thead>
                     <tr>
                         <th>菜品ID</th>
@@ -58,12 +58,12 @@
                             <td>${item.state}</td>
                             <td>
                                 <c:if test="${item.state=='排队中'}">
-                                    <button class="btn btn-default cook_btn" oid="${item.oId}" did="${item.dId}" >
+                                    <button class="btn btn-warning cook_btn" oid="${item.oId}" did="${item.dId}" >
                                         烹饪
                                     </button>
                                 </c:if>
                                 <c:if test="${item.state=='正在烹饪'}">
-                                    <button class="btn btn-default serve_btn" oid="${item.oId}" did="${item.dId}">
+                                    <button class="btn btn-success serve_btn" oid="${item.oId}" did="${item.dId}">
                                         上菜
                                     </button>
                                 </c:if>

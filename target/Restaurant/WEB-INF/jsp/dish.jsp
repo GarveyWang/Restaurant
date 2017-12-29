@@ -34,12 +34,12 @@
             <h3 style="text-align: center;color: white">湘粤阁菜品管理</h3>
             <c:forEach var="dishGroup" items="${dishGroupList}">
                 <table class="table" style="color: white">
-                    <caption style="color:white">菜品组ID:${dishGroup.dgId} &nbsp;&nbsp; 菜品组名:${dishGroup.name}
-                        <button class="btn btn-warning dish_group_update_form_open_btn" dgId="${dishGroup.dgId}" name="${dishGroup.name}"
+                    <caption style="color: #f7e1b5">菜品组ID:${dishGroup.dgId} &nbsp;&nbsp; 菜品组名:${dishGroup.name}
+                        <button class="btn btn-primary dish_group_update_form_open_btn" dgId="${dishGroup.dgId}" name="${dishGroup.name}"
                         data-toggle="modal" data-target="#updateDishGroup">
                             修改
                         </button>
-                        <a href="/dish/group/${dishGroup.dgId}/delete" class="btn btn-danger">删除</a>
+                        <a href="/dish/group/${dishGroup.dgId}/delete" class="btn btn-warning">删除</a>
                     </caption>
                     <thead>
                     <tr>
@@ -64,12 +64,12 @@
                             <td>${dish.active}</td>
                             <td>${dish.status}</td>
                             <td>
-                                <button class="btn btn-warning"id="dish_update_form_open_btn" did="${dish.dId}" dgid="${dish.dgId}"
+                                <button class="btn btn-primary"id="dish_update_form_open_btn" did="${dish.dId}" dgid="${dish.dgId}"
                                         name="${dish.name}" desc="${dish.description}" price="${dish.price}" cost="${dish.cost}"
                                         active="${dish.active}" status="${dish.status}" data-toggle="modal" data-target="#updateDish">
                                     修改
                                 </button>
-                                <a href="/dish/${dish.dId}/delete" class="btn btn-danger">删除</a>
+                                <a href="/dish/${dish.dId}/delete" class="btn btn-warning">删除</a>
                             </td>
                         </tr>
                     </c:forEach>
@@ -91,8 +91,8 @@
                         <label>菜品组名称
                             <input type="text" id="dg_name" class="form-control" name="name" placeholder="请输入菜品组名称" >
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="dish_group_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="dish_group_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -108,8 +108,8 @@
                         <label>菜品组名称
                             <input type="text" class="form-control" name="name" placeholder="请输入菜品组名称" value="菜品组${dishGroupList.size()+1}" >
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="dish_group_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="dish_group_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -156,8 +156,8 @@
                                 <option value="售罄">售罄</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="dish_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="dish_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -201,8 +201,8 @@
                                 <option value="售罄">售罄</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="dish_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="dish_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>

@@ -36,10 +36,10 @@
         <div class="container" >
             <c:forEach var="tableGroup" items="${tableGroupList}">
                 <table class="table" style="color: white">
-                    <caption style="color: #eea236">餐桌组ID:${tableGroup.tgId} &nbsp;&nbsp; 餐桌组名:${tableGroup.name}&nbsp;&nbsp;
+                    <caption style="color: #f7e1b5">餐桌组ID:${tableGroup.tgId} &nbsp;&nbsp; 餐桌组名:${tableGroup.name}&nbsp;&nbsp;
                         <c:if test="${role=='admin'}">
-                            <a class="btn btn-default" href="/table/group/${tableGroup.tgId}/delete">删除</a>
-                            <button class="btn btn-default table_group_update_form_open_btn" tgId="${tableGroup.tgId}" tgName="${tableGroup.name}"
+                            <a class="btn btn-warning" href="/table/group/${tableGroup.tgId}/delete">删除</a>
+                            <button class="btn btn-success table_group_update_form_open_btn" tgId="${tableGroup.tgId}" tgName="${tableGroup.name}"
                             data-toggle="modal" data-target="#updateTableGroup">更新</button>
                         </c:if>
                     </caption>
@@ -67,13 +67,13 @@
                             <td>${table.status}</td>
                             <td>
                                 <c:if test="${role=='admin'}">
-                                    <a class="btn btn-default" href="/table/${table.tId}/delete">删除</a>
+                                    <a class="btn btn-warning" href="/table/${table.tId}/delete">删除</a>
                                     <button class="btn btn-default table_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
                                             name="${table.name}" desc="${table.description}" capacity="${table.capacity}"
                                             guestnumber="${table.guestNumber}" servicecode="${table.serviceCode}" status="${table.status}"
                                             data-toggle="modal" data-target="#updateTable">更新</button>
                                 </c:if>
-                                <button class="btn btn-default guest_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
+                                <button class="btn btn-primary guest_update_form_open_btn" tId="${table.tId}" tgId="${table.tgId}"
                                         name="${table.name}" capacity="${table.capacity}"
                                         guestnumber="${table.guestNumber}" servicecode="${table.serviceCode}" status="${table.status}"
                                         data-toggle="modal" data-target="#updateGuest">更新顾客</button>
@@ -131,8 +131,8 @@
                                 <option value="空闲">空闲</option>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="table_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="table_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -151,8 +151,8 @@
                         <label>餐桌组名称
                             <input type="text" id="tg_name" class="form-control" name="name" placeholder="请输入餐桌组名称" >
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="table_group_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="table_group_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -185,8 +185,8 @@
                                 </c:forEach>
                             </select>
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="table_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="table_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -202,8 +202,8 @@
                         <label>餐桌组名称
                             <input type="text" class="form-control" name="name" placeholder="请输入餐桌组名称" value="餐桌组${tableGroupList.size()+1}" >
                         </label>
-                        <button type="submit" class="btn btn-default">新建</button>
-                        <button type="button" id="table_group_reg_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-info">新建</button>
+                        <button type="button" id="table_group_reg_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -238,8 +238,8 @@
                         <label>服务码
                             <input type="text" id="guest_update_service_code" class="form-control" name="serviceCode" placeholder="请输入服务码"  >
                         </label>
-                        <button type="submit" class="btn btn-default">更新</button>
-                        <button type="button" id="guest_update_form_close_btn" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="submit" class="btn btn-primary">更新</button>
+                        <button type="button" id="guest_update_form_close_btn" class="btn btn-warning" data-dismiss="modal">关闭</button>
                     </div>
                 </form>
             </div>
@@ -301,7 +301,6 @@
             $('#guest_update_guest_number').val($(this).attr('guestnumber'));
             $('#guest_update_status').val($(this).attr('status'));
             $('#guest_update_service_code').val($(this).attr('servicecode'));
-
             var action="/table/"+$(this).attr('tid')+"/guest/update";
             $('#guest_update_form').attr("action",action);
         })
