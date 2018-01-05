@@ -56,7 +56,10 @@
                                     <td>${dish.name}</td>
                                     <td>${dish.description}</td>
                                     <td>${dish.price}</td>
-                                    <td>${dish.status}</td>
+                                    <td>
+                                        <c:if test="${dish.status==1}">正常销售</c:if>
+                                        <c:if test="${dish.status==0}">售罄</c:if>
+                                    </td>
                                     <td>
                                         <div class="form-group form-inline">
                                             <label>备注

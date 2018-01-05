@@ -45,6 +45,9 @@
                             <button class="btn btn-warning end_btn" oid="${item.oId}" tid="${item.tId}">
                                 结束
                             </button>
+                            <button class="btn btn-default" oid="${item.oId}" >
+                                账单详情
+                            </button>
                         </td>
                     </tr>
                 </c:forEach>

@@ -46,7 +46,10 @@
                 <tr>
                     <td>${cashier.cId}</td>
                     <td>${cashier.password}</td>
-                    <td>${cashier.active}</td>
+                    <td>
+                        <c:if test="${cashier.active==1}">正常</c:if>
+                        <c:if test="${cashier.active==0}">停用</c:if>
+                    </td>
                     <td>
                         <button wid="${cashier.cId}" wpwd="${cashier.password}" class="btn btn-primary" id="cashier_update_btn" data-toggle="modal"
                         data-target="#updateCashier">修改</button>
@@ -72,7 +75,10 @@
                         <td>${waiter.wId}</td>
                         <td>${waiter.name}</td>
                         <td>${waiter.password}</td>
-                        <td>${waiter.active}</td>
+                        <td>
+                            <c:if test="${waiter.active==1}">正常</c:if>
+                            <c:if test="${waiter.active==0}">停用</c:if>
+                        </td>
                         <td>
                             <button wid="${waiter.wId}" wname="${waiter.name}" wpwd="${waiter.password}" wactive="${waiter.active}" class="btn btn-primary waiter_update_btn"
                             data-toggle="modal" data-target="#updateWaiter">修改</button>
@@ -100,7 +106,10 @@
                         <td>${kitchen.kId}</td>
                         <td>${kitchen.name}</td>
                         <td>${kitchen.password}</td>
-                        <td>${kitchen.active}</td>
+                        <td>
+                            <c:if test="${kitchen.active==1}">正常</c:if>
+                            <c:if test="${kitchen.active==0}">停用</c:if>
+                        </td>
                         <td>
                             <button kid="${kitchen.kId}" kname="${kitchen.name}" kpwd="${kitchen.password}" kactive="${kitchen.active}" class="btn btn-primary kitchen_update_btn"
                             data-toggle="modal" data-target="#updateKitchen">修改</button>
@@ -131,8 +140,8 @@
                         </label>
                         <label>账号状态
                             <select id="kitchen_active" name="active" class="form-control">
-                                <option>1</option>
-                                <option>0</option>
+                                <option value="1">正常</option>
+                                <option value="0">停用</option>
                             </select>
                         </label>
                         <button type="submit" class="btn btn-primary">更新</button>
@@ -160,8 +169,8 @@
                         </label>
                         <label>账号状态
                             <select id="waiter_active" name="active" class="form-control">
-                                <option>1</option>
-                                <option>0</option>
+                                <option value="1">正常</option>
+                                <option value="0">停用</option>
                             </select>
                         </label>
                         <button type="submit" class="btn btn-primary">更新</button>
@@ -186,8 +195,8 @@
                         </label>
                         <label>账号状态
                             <select id="cashier_active" name="active" class="form-control">
-                                <option>1</option>
-                                <option>0</option>
+                                <option value="1">正常</option>
+                                <option value="0">停用</option>
                             </select>
                         </label>
                         <button type="submit" class="btn btn-primary">更新</button>
